@@ -1,0 +1,6134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Radhe Radhe Fashion & Lifestyle - Sarees, Suits, Kruti, Girls Wear, Boys Wear and Kids Wear in Phulwari Sharif, Patna.">
+<meta name="keywords" content="Radhe Radhe, Fashion, Saree, Suits, Kruti, Girls Wear, Boys Wear, Kids Wear, Phulwari Sharif, Patna">
+<title>Radhe Radhe | Fashion & Lifestyle</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root{
+    --white:#ffffff;
+    --soft:#f8f9fb;
+    --text:#171719;
+    --muted:#74767b;
+    --line:#e8e9ed;
+
+    --mint:#9bffcf;
+    --mint2:#18c98b;
+    --purple:#b7a7ff;
+    --purple2:#7d55e8;
+
+    --pink:#ff9fc0;
+    --blue:#9fc9ff;
+    --yellow:#ffd98a;
+
+    --dark:#11141b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"DM Sans",sans-serif;
+    background:#fff;
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:430px;
+    height:430px;
+    top:-180px;
+    left:-170px;
+    border-radius:50%;
+    background:rgba(155,255,207,.19);
+    filter:blur(100px);
+    pointer-events:none;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:470px;
+    height:470px;
+    right:-220px;
+    bottom:-180px;
+    border-radius:50%;
+    background:rgba(183,167,255,.18);
+    filter:blur(110px);
+    pointer-events:none;
+    z-index:-2;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    font-family:inherit;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+/* ================================
+   GLOBAL
+================================ */
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+section{
+    width:min(1180px,92%);
+    margin:0 auto;
+}
+
+.section-kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 11px;
+    border:1px solid rgba(155,255,207,.55);
+    border-radius:50px;
+    background:rgba(255,255,255,.82);
+    color:#66686e;
+    font-size:9px;
+    font-weight:600;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    box-shadow:
+        0 0 14px rgba(155,255,207,.12),
+        0 0 15px rgba(183,167,255,.08);
+}
+
+.section-kicker::before{
+    content:"";
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--mint2);
+    box-shadow:0 0 9px var(--mint2);
+}
+
+.section-title{
+    margin-top:10px;
+    font-family:"Playfair Display",serif;
+    font-size:43px;
+    line-height:1.05;
+    font-weight:600;
+    letter-spacing:-1px;
+}
+
+.section-description{
+    max-width:410px;
+    color:#777980;
+    font-size:13px;
+    line-height:1.8;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    padding:8px 0;
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+}
+
+.nav{
+    width:min(1180px,92%);
+    min-height:66px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+
+    padding:0 18px;
+
+    border:1px solid rgba(211,211,220,.75);
+    border-radius:16px;
+
+    background:rgba(255,255,255,.72);
+
+    box-shadow:
+        0 0 0 1px rgba(155,255,207,.12),
+        0 0 18px rgba(155,255,207,.13),
+        0 0 22px rgba(183,167,255,.12),
+        0 10px 30px rgba(0,0,0,.035);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-shrink:0;
+}
+
+.brand-logo{
+    width:49px;
+    height:49px;
+    object-fit:cover;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.9);
+    background:linear-gradient(135deg,#fdf6ec,#fdf1f4);
+    box-shadow:
+        0 0 12px rgba(155,255,207,.22),
+        0 0 15px rgba(183,167,255,.18);
+}
+
+.brand-text{
+    line-height:1;
+}
+
+.brand-text strong{
+    display:block;
+    font-family:"Playfair Display",serif;
+    font-size:23px;
+    letter-spacing:.1px;
+}
+
+.brand-text span{
+    display:block;
+    margin-top:5px;
+    text-align:center;
+    color:#777980;
+    font-size:8px;
+    font-weight:600;
+    letter-spacing:2.5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    color:#3f4147;
+    font-size:12px;
+}
+
+.nav-links a{
+    position:relative;
+    padding:25px 0;
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--purple2);
+}
+
+.nav-links a.active{
+    color:#7046cf;
+}
+
+.nav-links a.active::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:15px;
+    width:25px;
+    height:1px;
+    margin:auto;
+    background:#8b5cf6;
+    box-shadow:0 0 8px #b7a7ff;
+}
+
+.nav-contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+
+    min-width:92px;
+    height:38px;
+    padding:0 16px;
+
+    border:1px solid rgba(181,167,255,.75);
+    border-radius:50px;
+    background:#fff;
+
+    font-size:11px;
+    font-weight:600;
+
+    box-shadow:
+        0 0 16px rgba(183,167,255,.15),
+        0 0 12px rgba(155,255,207,.10);
+}
+
+.nav-contact:hover{
+    box-shadow:
+        0 0 22px rgba(183,167,255,.28),
+        0 0 18px rgba(155,255,207,.20);
+}
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+}
+
+.cart-btn{
+    position:relative;
+    width:38px;
+    height:38px;
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(181,167,255,.75);
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+
+    box-shadow:
+        0 0 16px rgba(183,167,255,.15),
+        0 0 12px rgba(155,255,207,.10);
+
+    transition:box-shadow .25s ease, transform .25s ease;
+}
+
+.cart-btn:hover{
+    transform:translateY(-1px);
+    box-shadow:
+        0 0 22px rgba(183,167,255,.28),
+        0 0 18px rgba(155,255,207,.20);
+}
+
+.cart-btn svg{
+    width:17px;
+    height:17px;
+    color:#3f4147;
+}
+
+.cart-badge{
+    position:absolute;
+    top:-5px;
+    right:-6px;
+    min-width:17px;
+    height:17px;
+    padding:0 4px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50px;
+    background:#7d2f3f;
+    color:#fff;
+    font-size:9px;
+    font-weight:700;
+
+    box-shadow:0 0 8px rgba(125,47,63,.5);
+}
+
+.cart-badge.hidden{
+    display:none;
+}
+
+/* ================================
+   HERO
+================================ */
+
+.hero{
+    min-height:590px;
+
+    display:grid;
+    grid-template-columns:1fr 1.08fr;
+    align-items:center;
+
+    gap:48px;
+    padding:55px 0 45px;
+}
+
+.hero-left{
+    padding-left:2px;
+}
+
+.hero h1{
+    margin-top:16px;
+
+    font-family:"Playfair Display",serif;
+    font-size:clamp(54px,6vw,78px);
+    line-height:.98;
+    font-weight:600;
+    letter-spacing:-3px;
+}
+
+.hero-subtitle{
+    margin-top:4px;
+    font-family:"Playfair Display",serif;
+    font-size:29px;
+    letter-spacing:.1px;
+}
+
+.hero-categories{
+    margin-top:17px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    color:#404247;
+    font-size:11px;
+}
+
+.hero-cat-btn{
+    white-space:nowrap;
+    background:none;
+    border:none;
+    padding:0;
+    font:inherit;
+    color:#404247;
+    cursor:pointer;
+    position:relative;
+    transition:color .25s ease;
+}
+
+.hero-cat-btn:hover,
+.hero-cat-btn:focus-visible{
+    color:#7d2f3f;
+}
+
+.hero-cat-btn:not(:last-child)::after{
+    content:"|";
+    margin-left:7px;
+    color:#9b9ca2;
+}
+
+.hero-quote{
+    margin-top:22px;
+    font-family:"Playfair Display",serif;
+    font-size:17px;
+    font-style:italic;
+    color:#4e4f54;
+}
+
+.hero-description{
+    margin-top:22px;
+    max-width:485px;
+    color:#6f7178;
+    font-size:13px;
+    line-height:1.85;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:11px;
+    margin-top:25px;
+}
+
+.btn{
+    min-height:43px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+
+    padding:0 20px;
+
+    border-radius:50px;
+
+    font-size:11px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-primary{
+    color:#fff;
+    background:#171a21;
+
+    box-shadow:
+        0 12px 26px rgba(0,0,0,.12),
+        0 0 18px rgba(155,255,207,.10);
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.16),
+        0 0 25px rgba(155,255,207,.22);
+}
+
+.btn-light{
+    color:#2e3035;
+    border:1px solid #d9dce2;
+    background:#fff;
+}
+
+.btn-light:hover{
+    border-color:#9bffcf;
+    box-shadow:0 0 18px rgba(155,255,207,.18);
+}
+
+/* ================================
+   SVG SOCIAL ICONS
+================================ */
+
+.social-svg{
+    width:18px;
+    height:18px;
+    display:block;
+    flex-shrink:0;
+}
+
+.btn .social-svg{
+    width:16px;
+    height:16px;
+}
+
+.contact-icon .social-svg{
+    width:15px;
+    height:15px;
+}
+
+.social .social-svg{
+    width:14px;
+    height:14px;
+}
+
+.username-link,
+.phone-link{
+    color:inherit;
+    transition:.2s;
+}
+
+.username-link:hover,
+.phone-link:hover{
+    color:#7046cf;
+}
+
+/* Hero Image */
+
+.hero-visual{
+    position:relative;
+    perspective:1200px;
+}
+
+.hero-frame{
+    position:relative;
+    overflow:hidden;
+
+    border-radius:25px;
+
+    background:linear-gradient(135deg,#fdf6ec 0%, #fdf1f4 55%, #f7e9ee 100%);
+
+    border:1px solid rgba(155,255,207,.65);
+
+    box-shadow:
+        0 25px 55px rgba(0,0,0,.10),
+        0 0 0 1px rgba(183,167,255,.16),
+        0 0 35px rgba(155,255,207,.27),
+        0 0 32px rgba(183,167,255,.18);
+
+    transform-style:preserve-3d;
+    transition:transform .35s cubic-bezier(.2,.7,.3,1);
+    will-change:transform;
+}
+
+.hero-frame::before{
+    content:"";
+    position:absolute;
+    inset:-3px;
+
+    border-radius:28px;
+
+    border:1px solid rgba(183,167,255,.42);
+
+    box-shadow:
+        0 0 15px rgba(183,167,255,.24),
+        inset 0 0 15px rgba(155,255,207,.12);
+
+    pointer-events:none;
+}
+
+.hero-frame img{
+    width:100%;
+    height:405px;
+
+    object-fit:cover;
+}
+
+.hero-badge{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 16px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.93);
+    border:1px solid #e6e7eb;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 14px 30px rgba(0,0,0,.12),
+        0 0 20px rgba(155,255,207,.13);
+}
+
+.badge-check{
+    width:27px;
+    height:27px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:9px;
+
+    background:#16c78a;
+    color:white;
+
+    font-size:15px;
+
+    box-shadow:0 0 13px rgba(24,201,139,.30);
+}
+
+.hero-badge strong{
+    display:block;
+    font-size:11px;
+}
+
+.hero-badge small{
+    display:block;
+    margin-top:2px;
+    color:#777980;
+    font-size:9px;
+}
+
+/* ================================
+   COLLECTIONS
+================================ */
+
+.collections{
+    padding:45px 0 35px;
+}
+
+.section-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:30px;
+    margin-bottom:25px;
+}
+
+.view-all{
+    font-size:10px;
+    color:#4d4f54;
+}
+
+.view-all:hover{
+    color:#7046cf;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:13px;
+}
+
+.category{
+    min-height:130px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:15px 10px;
+
+    border:1px solid #e5e7eb;
+    border-radius:13px;
+
+    background:#fff;
+
+    transition:.3s;
+}
+
+.category:hover{
+    transform:translateY(-5px);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.055),
+        0 0 20px rgba(155,255,207,.14);
+}
+
+.category:nth-child(1){
+    background:linear-gradient(145deg,#fff7fa,#fff);
+    border-color:#ffd5e1;
+}
+
+.category:nth-child(2){
+    background:linear-gradient(145deg,#f1ffff,#fff);
+    border-color:#c6eeee;
+}
+
+.category:nth-child(3){
+    background:linear-gradient(145deg,#f8f3ff,#fff);
+    border-color:#ddd0ff;
+}
+
+.category:nth-child(4){
+    background:linear-gradient(145deg,#fff4f7,#fff);
+    border-color:#ffd5e2;
+}
+
+.category:nth-child(5){
+    background:linear-gradient(145deg,#f2f7ff,#fff);
+    border-color:#cddfff;
+}
+
+.category:nth-child(6){
+    background:linear-gradient(145deg,#fffaf0,#fff);
+    border-color:#f4dfae;
+}
+
+.category-icon{
+    width:58px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:11px;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:17px;
+
+    filter:drop-shadow(0 10px 16px rgba(0,0,0,.16));
+    transition:transform .3s ease;
+}
+
+.category:hover .category-icon{
+    transform:translateY(-3px) scale(1.05);
+}
+
+.category-icon::after{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:-8px;
+    width:65%;
+    height:65%;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(255,255,255,.6), transparent 70%);
+    pointer-events:none;
+}
+
+.icon-png{
+    display:none;
+    position:relative;
+    z-index:1;
+    width:46px;
+    height:46px;
+    object-fit:contain;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.22));
+}
+
+.icon-emoji{
+    position:relative;
+    z-index:1;
+    font-size:46px;
+    line-height:1;
+    font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.22));
+}
+
+.category:nth-child(1) .category-icon{ background:linear-gradient(150deg,#ffa9c4,#ff6f95); }
+.category:nth-child(2) .category-icon{ background:linear-gradient(150deg,#8fe7e4,#33c2c7); }
+.category:nth-child(3) .category-icon{ background:linear-gradient(150deg,#cdadff,#9b6bf0); }
+.category:nth-child(4) .category-icon{ background:linear-gradient(150deg,#9cc0ff,#5f8ff5); }
+.category:nth-child(5) .category-icon{ background:linear-gradient(150deg,#ffb7cd,#ff7fa6); }
+.category:nth-child(6) .category-icon{ background:linear-gradient(150deg,#ffdb96,#f6b83f); }
+.category:nth-child(7) .category-icon{ background:linear-gradient(150deg,#fff8e4,#f2e2b3); }
+
+.category strong{
+    font-size:12px;
+}
+
+.category span{
+    margin-top:4px;
+    color:#85878d;
+    font-size:9px;
+}
+
+/* ================================
+   GALLERY
+================================ */
+
+.gallery-section{
+    padding:42px 0 70px;
+}
+
+.gallery-layout{
+    display:grid;
+    grid-template-columns:.8fr 1.7fr;
+    gap:45px;
+    align-items:center;
+}
+
+.gallery-intro{
+    padding-left:3px;
+}
+
+.gallery-intro p{
+    max-width:270px;
+    margin-top:17px;
+    color:#74767d;
+    font-size:13px;
+    line-height:1.8;
+}
+
+.divider-heart{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:24px 0;
+}
+
+.divider-heart::before,
+.divider-heart::after{
+    content:"";
+    width:55px;
+    height:1px;
+    background:#aaa4c8;
+}
+
+.divider-heart span{
+    color:#7046cf;
+    font-size:12px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:11px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+
+    min-height:135px;
+
+    border:1px solid #e5e7ea;
+    border-radius:14px;
+
+    background:linear-gradient(135deg,#fdf6ec 0%, #fdf1f4 100%);
+
+    box-shadow:
+        0 9px 22px rgba(0,0,0,.055),
+        0 0 15px rgba(155,255,207,.06);
+}
+
+.gallery-item img{
+    width:100%;
+    height:135px;
+    object-fit:cover;
+
+    transition:.55s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.06);
+}
+
+.gallery-label{
+    position:absolute;
+    left:8px;
+    bottom:8px;
+
+    padding:6px 9px;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    background:rgba(12,14,17,.72);
+
+    backdrop-filter:blur(9px);
+
+    font-size:9px;
+    font-weight:600;
+}
+
+.gallery-item:nth-child(1){
+    grid-column:span 1;
+}
+
+/* ================================
+   WHY CHOOSE US
+================================ */
+
+.why{
+    padding:0 0 70px;
+}
+
+.why-box{
+    position:relative;
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:.95fr 1.25fr .7fr;
+    gap:25px;
+    align-items:center;
+
+    padding:35px 38px;
+
+    border:1px solid #e4e6ea;
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #ffffff 0%,
+            #f9fcfb 47%,
+            #faf7ff 100%
+        );
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.055),
+        0 0 30px rgba(155,255,207,.08),
+        0 0 30px rgba(183,167,255,.07);
+}
+
+.why-box::before{
+    content:"";
+    position:absolute;
+    width:240px;
+    height:240px;
+    left:-130px;
+    bottom:-150px;
+
+    border-radius:50%;
+
+    background:rgba(155,255,207,.28);
+    filter:blur(50px);
+}
+
+.why-box::after{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    right:-100px;
+    top:-120px;
+
+    border-radius:50%;
+
+    background:rgba(183,167,255,.22);
+    filter:blur(50px);
+}
+
+.why-content{
+    position:relative;
+    z-index:2;
+}
+
+.why-content h2{
+    margin-top:10px;
+    font-family:"Playfair Display",serif;
+    font-size:34px;
+    line-height:1.08;
+}
+
+.why-content p{
+    margin-top:14px;
+    max-width:310px;
+    color:#777980;
+    font-size:11px;
+    line-height:1.75;
+}
+
+.features{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px 24px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.feature-icon{
+    width:37px;
+    height:37px;
+
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #dacbff;
+    border-radius:50%;
+
+    color:#754fd0;
+
+    background:#fff;
+
+    box-shadow:
+        0 0 15px rgba(183,167,255,.18);
+}
+
+.feature strong{
+    display:block;
+    font-size:11px;
+}
+
+.feature span{
+    display:block;
+    margin-top:3px;
+    color:#85878d;
+    font-size:8px;
+}
+
+.signature{
+    position:relative;
+    z-index:2;
+
+    min-height:155px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    border-left:1px solid #e4e4e9;
+    padding-left:20px;
+}
+
+.signature-name{
+    font-family:"Playfair Display",serif;
+    font-style:italic;
+    font-size:29px;
+    transform:rotate(-5deg);
+}
+
+.signature-heart{
+    margin:5px 0;
+    color:#754fd0;
+}
+
+.signature small{
+    font-size:7px;
+    letter-spacing:3px;
+    color:#696b71;
+}
+
+/* ================================
+   STORE / CONTACT
+================================ */
+
+.contact{
+    padding:0 0 75px;
+}
+
+.contact-layout{
+    display:grid;
+    grid-template-columns:.7fr 1.15fr .9fr;
+    gap:25px;
+    align-items:center;
+}
+
+.contact-intro p{
+    margin-top:15px;
+    max-width:245px;
+    color:#74767d;
+    font-size:11px;
+    line-height:1.8;
+}
+
+.contact-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.contact-card{
+    min-height:95px;
+
+    padding:15px 13px;
+
+    border:1px solid #e7e8ec;
+    border-radius:12px;
+
+    background:#fff;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.035),
+        0 0 15px rgba(183,167,255,.045);
+}
+
+.contact-icon{
+    width:28px;
+    height:28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:8px;
+
+    border:1px solid #dfd4ff;
+    border-radius:9px;
+
+    color:#6f4bca;
+
+    background:#fff;
+
+    font-size:12px;
+}
+
+.contact-card small{
+    display:block;
+    color:#3e4045;
+    font-size:9px;
+    font-weight:600;
+}
+
+.contact-card span{
+    display:block;
+    margin-top:4px;
+    color:#777980;
+    font-size:8px;
+    line-height:1.55;
+}
+
+.contact-actions{
+    display:flex;
+    gap:8px;
+    margin-top:11px;
+}
+
+.contact-actions .btn{
+    min-height:34px;
+    padding:0 13px;
+    font-size:8px;
+}
+
+.map-card{
+    position:relative;
+    overflow:hidden;
+
+    height:150px;
+
+    border:1px solid #e3e5e8;
+    border-radius:15px;
+
+    background:#edf2ee;
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.07),
+        0 0 20px rgba(155,255,207,.13);
+}
+
+.map-card iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    filter:saturate(.8);
+}
+
+.map-button{
+    position:absolute;
+    left:50%;
+    bottom:12px;
+    transform:translateX(-50%);
+
+    width:155px;
+    min-height:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.94);
+
+    border:1px solid #e2e3e7;
+
+    font-size:9px;
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.13);
+
+    transition:.25s;
+}
+
+.map-button:hover{
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.15),
+        0 0 18px rgba(155,255,207,.25);
+}
+
+/* ================================
+   EXTRA DETAILS
+================================ */
+
+.details-strip{
+    padding:0 0 65px;
+}
+
+.details-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.detail-card{
+    padding:18px;
+
+    border:1px solid #e8e9ec;
+    border-radius:16px;
+
+    background:#fff;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.035);
+
+    transition:.3s;
+}
+
+.detail-card:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 14px 28px rgba(0,0,0,.055),
+        0 0 18px rgba(155,255,207,.10);
+}
+
+.detail-card .detail-icon{
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.detail-card strong{
+    display:block;
+    font-size:11px;
+}
+
+.detail-card span{
+    display:block;
+    margin-top:4px;
+    color:#85878c;
+    font-size:8px;
+    line-height:1.5;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer{
+    background:#12151c;
+    color:#fff;
+    border-top:1px solid rgba(255,255,255,.07);
+}
+
+.footer-inner{
+    width:min(1180px,92%);
+    margin:auto;
+
+    min-height:120px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-items:center;
+    gap:30px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.footer-brand img{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+}
+
+.footer-brand strong{
+    display:block;
+    font-family:"Playfair Display",serif;
+    font-size:20px;
+}
+
+.footer-brand small{
+    display:block;
+    margin-top:4px;
+    color:#aeb1ba;
+    font-size:7px;
+    letter-spacing:2px;
+}
+
+.footer-center{
+    text-align:center;
+}
+
+.footer-motto{
+    color:#fff;
+    font-size:8px;
+    letter-spacing:4px;
+}
+
+.footer-line{
+    width:115px;
+    height:1px;
+    margin:12px auto;
+
+    background:rgba(255,255,255,.45);
+}
+
+.footer-address{
+    color:#b9bbc2;
+    font-size:9px;
+}
+
+.footer-right{
+    text-align:right;
+}
+
+.socials{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-bottom:13px;
+}
+
+.social{
+    width:27px;
+    height:27px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+
+    color:#fff;
+
+    font-size:10px;
+
+    transition:.25s;
+}
+
+.social:hover{
+    border-color:#9bffcf;
+    box-shadow:0 0 15px rgba(155,255,207,.28);
+}
+
+.footer-copy{
+    color:#8d9099;
+    font-size:8px;
+    line-height:1.7;
+}
+
+.footer-love{
+    color:#ff8fb8;
+}
+
+/* ================================
+   MOBILE MENU
+================================ */
+
+.mobile-menu{
+    display:none;
+}
+
+/* ================================
+    RESPONSIVE
+================================ */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:18px;
+    }
+
+    .hero{
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .gallery-layout{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-intro p{
+        max-width:500px;
+    }
+
+    .why-box{
+        grid-template-columns:1fr;
+    }
+
+    .signature{
+        border-left:0;
+        border-top:1px solid #e4e4e9;
+        padding:18px 0 0;
+        min-height:auto;
+    }
+
+    .contact-layout{
+        grid-template-columns:1fr 1.5fr;
+    }
+
+    .map-card{
+        grid-column:span 2;
+    }
+}
+
+@media(max-width:760px){
+
+    header{
+        padding:6px 0;
+    }
+
+    .nav{
+        min-height:61px;
+        padding:0 11px;
+    }
+
+    .brand-logo{
+        width:42px;
+        height:42px;
+    }
+
+    .brand-text strong{
+        font-size:19px;
+    }
+
+    .brand-text span{
+        font-size:7px;
+        letter-spacing:2px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-contact{
+        min-width:78px;
+        height:34px;
+        padding:0 12px;
+        font-size:9px;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        padding:45px 0 50px;
+        gap:40px;
+    }
+
+    .hero h1{
+        font-size:58px;
+    }
+
+    .hero-subtitle{
+        font-size:25px;
+    }
+
+    .hero-frame img{
+        height:350px;
+    }
+
+    .section-head{
+        display:block;
+    }
+
+    .section-description{
+        margin-top:13px;
+    }
+
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery-item{
+        min-height:155px;
+    }
+
+    .gallery-item img{
+        height:155px;
+    }
+
+    .gallery-item:nth-child(5){
+        grid-column:span 2;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .why-box{
+        padding:28px 22px;
+    }
+
+    .contact-layout{
+        grid-template-columns:1fr;
+    }
+
+    .map-card{
+        grid-column:auto;
+    }
+
+    .details-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:30px 0;
+    }
+
+    .footer-brand{
+        justify-content:center;
+    }
+
+    .footer-right{
+        text-align:center;
+    }
+
+    .socials{
+        justify-content:center;
+    }
+}
+
+@media(max-width:450px){
+
+    .hero h1{
+        font-size:51px;
+    }
+
+    .hero-subtitle{
+        font-size:22px;
+    }
+
+    .hero-categories{
+        font-size:9px;
+    }
+
+    .hero-description{
+        font-size:12px;
+    }
+
+    .hero-frame img{
+        height:320px;
+    }
+
+    .section-title{
+        font-size:35px;
+    }
+
+    .gallery-layout{
+        gap:30px;
+    }
+
+    .contact-cards{
+        grid-template-columns:1fr;
+    }
+
+    .contact-card{
+        min-height:auto;
+    }
+}
+
+/* ================================
+   ANNOUNCEMENT RIBBON
+================================ */
+
+.ribbon{
+    overflow:hidden;
+    background:linear-gradient(90deg,#eafff5,#e2fbf0,#eafff5);
+    border-bottom:1px solid rgba(155,255,207,.55);
+}
+
+.ribbon-track{
+    display:flex;
+    width:max-content;
+    gap:48px;
+    padding:9px 0;
+    animation:ribbon-scroll 26s linear infinite;
+}
+
+.ribbon-track span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:#189a6c;
+    white-space:nowrap;
+}
+
+.ribbon-track span::before{
+    content:"✦";
+    color:#18c98b;
+    font-size:9px;
+}
+
+@keyframes ribbon-scroll{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(-50%); }
+}
+
+/* ================================
+   SHOP THE OCCASION
+================================ */
+
+.occasion{
+    padding:15px 0 70px;
+    position:relative;
+}
+
+.occasion-box{
+    position:relative;
+    overflow:hidden;
+    border-radius:25px;
+    padding:44px 40px;
+    border:1px solid #eee1cf;
+    background:linear-gradient(135deg,#fffaf3 0%,#fff7f9 60%,#fdf3f7 100%);
+}
+
+.occasion-motif{
+    position:absolute;
+    right:-40px;
+    top:-40px;
+    width:230px;
+    height:230px;
+    opacity:.16;
+    pointer-events:none;
+}
+
+.occasion-head{
+    position:relative;
+    z-index:2;
+    max-width:520px;
+}
+
+.occasion-grid{
+    position:relative;
+    z-index:2;
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+.occasion-card{
+    padding:22px 16px;
+    border-radius:16px;
+    background:rgba(255,255,255,.75);
+    border:1px solid rgba(201,161,94,.28);
+    text-align:center;
+    transition:.3s;
+}
+
+.occasion-card:hover{
+    transform:translateY(-4px);
+    border-color:transparent;
+    box-shadow:0 16px 30px -14px rgba(201,161,94,.35),0 0 0 1px rgba(230,167,184,.35);
+    background:#fff;
+}
+
+.occasion-card .oc-icon{
+    font-size:26px;
+    margin-bottom:9px;
+}
+
+.occasion-card strong{
+    display:block;
+    font-size:12px;
+}
+
+.occasion-card span{
+    display:block;
+    margin-top:4px;
+    color:#8a7c74;
+    font-size:9px;
+    line-height:1.5;
+}
+
+@media(max-width:760px){
+    .occasion-grid{ grid-template-columns:1fr 1fr; }
+    .occasion-box{ padding:32px 22px; }
+}
+
+/* ================================
+   WHATSAPP FLOATING BUTTON
+================================ */
+
+.wa-fab{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    z-index:200;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#1fb35a;
+    color:#fff;
+    box-shadow:0 10px 26px rgba(0,0,0,.18), 0 0 0 rgba(31,179,90,.55);
+    animation:wa-pulse 2.6s ease-out infinite;
+}
+
+.wa-fab svg{ width:26px; height:26px; }
+
+@keyframes wa-pulse{
+    0%{ box-shadow:0 10px 26px rgba(0,0,0,.18), 0 0 0 0 rgba(31,179,90,.45); }
+    70%{ box-shadow:0 10px 26px rgba(0,0,0,.18), 0 0 0 14px rgba(31,179,90,0); }
+    100%{ box-shadow:0 10px 26px rgba(0,0,0,.18), 0 0 0 0 rgba(31,179,90,0); }
+}
+
+/* ================================
+   SCROLL REVEAL
+================================ */
+
+.reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .7s ease, transform .7s ease;
+}
+
+.reveal.in-view{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce){
+    .ribbon-track{ animation:none; }
+    .wa-fab{ animation:none; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+}
+
+/* ================================
+   GALLERY FILTER TABS
+================================ */
+
+.gallery-tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:22px 0 20px;
+}
+
+.gallery-tab{
+    padding:8px 16px;
+    border-radius:50px;
+    border:1px solid #e5e7eb;
+    background:#fff;
+    color:#5b5d63;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:.3px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.gallery-tab:hover{
+    border-color:#c9a15e;
+}
+
+.gallery-tab.active{
+    color:#fff;
+    background:#171a21;
+    border-color:#171a21;
+    box-shadow:0 0 16px rgba(201,161,94,.35);
+}
+
+.gallery-item{
+    transition:opacity .35s ease, transform .35s ease, box-shadow .3s ease;
+}
+
+.gallery-item.gi-hidden{
+    display:none;
+}
+
+.gallery-item .gallery-new{
+    position:absolute;
+    top:8px;
+    right:8px;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    padding:5px 10px;
+    border-radius:50px;
+    background:rgba(255,255,255,.92);
+    color:#7d2f3f;
+    font-size:8px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    box-shadow:0 0 10px rgba(230,167,184,.4);
+}
+
+.gallery-item .gallery-new::before{
+    content:"";
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#e6a7b8;
+    box-shadow:0 0 6px #e6a7b8;
+}
+
+/* ================================
+   STYLE DIARY / INSTAGRAM TEASER
+================================ */
+
+.diary{
+    padding:15px 0 70px;
+}
+
+.diary-box{
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:35px;
+    align-items:center;
+    padding:40px;
+    border-radius:25px;
+    border:1px solid #e5e6e9;
+    background:linear-gradient(120deg,#fff,#fbfaf6);
+}
+
+.diary-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.diary-tile{
+    position:relative;
+    aspect-ratio:1/1;
+    border-radius:12px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fdf6ec 0%, #fdf1f4 100%);
+}
+
+.diary-tile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.diary-tile:hover img{
+    transform:scale(1.08);
+}
+
+.diary-tile::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(200deg, rgba(230,167,184,0) 55%, rgba(230,167,184,.28) 100%);
+    opacity:0;
+    transition:.3s;
+}
+
+.diary-tile:hover::after{ opacity:1; }
+
+.diary-follow{
+    margin-top:20px;
+    display:inline-flex;
+}
+
+@media(max-width:900px){
+    .diary-box{ grid-template-columns:1fr; }
+}
+
+@media(max-width:500px){
+    .diary-grid{ grid-template-columns:repeat(3,1fr); }
+}
+
+/* ================================
+   MOBILE QUICK-ACTION BAR
+================================ */
+
+.quick-bar{
+    display:none;
+}
+
+@media(max-width:760px){
+
+    .wa-fab{ display:none; }
+
+    .quick-bar{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        position:fixed;
+        left:0; right:0; bottom:0;
+        z-index:200;
+        background:rgba(255,255,255,.94);
+        backdrop-filter:blur(14px);
+        border-top:1px solid #e6e2da;
+        box-shadow:0 -8px 24px rgba(0,0,0,.08);
+    }
+
+    .quick-bar a{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:3px;
+        padding:10px 4px 12px;
+        font-size:9px;
+        font-weight:600;
+        color:#3f4147;
+    }
+
+    .quick-bar a svg{ width:18px; height:18px; }
+
+    .quick-bar a.qb-primary{ color:#7d2f3f; }
+
+    body{ padding-bottom:64px; }
+}
+
+/* ================================
+   CATEGORY LIGHTBOX
+================================ */
+
+.gallery-item{
+    cursor:pointer;
+    outline:none;
+}
+
+.gallery-item:focus-visible{
+    box-shadow:0 0 0 3px rgba(201,161,94,.55);
+}
+
+.gallery-view{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    color:#fff;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    background:rgba(23,17,13,0);
+    opacity:0;
+    transition:.3s;
+}
+
+.gallery-item:hover .gallery-view,
+.gallery-item:focus-visible .gallery-view{
+    opacity:1;
+    background:rgba(23,17,13,.4);
+}
+
+.lightbox-overlay{
+    position:fixed;
+    inset:0;
+    z-index:400;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:22px;
+    background:rgba(18,14,11,.6);
+    backdrop-filter:blur(8px);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .35s ease;
+}
+
+.lightbox-overlay.open{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.lightbox-panel{
+    width:min(960px,100%);
+    max-height:86vh;
+    overflow-y:auto;
+    background:#fff;
+    border-radius:24px;
+    padding:30px 30px 34px;
+    box-shadow:0 40px 90px rgba(0,0,0,.35);
+    transform:translateY(16px) scale(.97);
+    transition:transform .35s ease;
+}
+
+.lightbox-overlay.open .lightbox-panel{
+    transform:translateY(0) scale(1);
+}
+
+.lightbox-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.lightbox-head h3{
+    font-family:"Playfair Display",serif;
+    font-size:21px;
+}
+
+.lightbox-head span{
+    display:block;
+    margin-top:3px;
+    color:#85878d;
+    font-size:10px;
+}
+
+.lb-head-title{
+    flex:1;
+    min-width:0;
+}
+
+.lb-head-actions{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    flex-shrink:0;
+}
+
+.lb-head-btn{
+    position:relative;
+    flex-shrink:0;
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    border:1px solid #e5e6e9;
+    background:#fff;
+    color:#3f4147;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.lb-head-btn:hover{
+    border-color:#c9a15e;
+    box-shadow:0 0 14px rgba(201,161,94,.32);
+}
+
+.lb-head-btn svg{
+    width:14px;
+    height:14px;
+}
+
+.lb-head-btn .cart-badge{
+    top:-5px;
+    right:-6px;
+}
+
+.lightbox-panel:not(.is-shop) #lightbox-filter-btn{
+    display:none;
+}
+
+.lightbox-panel.single-mode #lightbox-filter-btn{
+    display:none;
+}
+
+.lightbox-panel.single-mode #filter-dropdown{
+    display:none !important;
+}
+
+.lightbox-close{
+    flex-shrink:0;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    border:1px solid #e5e6e9;
+    background:#fff;
+    color:#3f4147;
+    font-size:16px;
+    line-height:1;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.lightbox-close:hover{
+    border-color:#c9a15e;
+    box-shadow:0 0 14px rgba(201,161,94,.32);
+}
+
+.lightbox-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:11px;
+}
+
+/* ================================
+   FILTER DROPDOWN (subcategories)
+   Small popover attached directly to
+   the filter icon — 2 columns only,
+   cream/butter badges, png + name
+   (no emoji), same size as the
+   bottom category-switch badges.
+================================ */
+.lb-filter-wrap{
+    position:relative;
+}
+
+.filter-dropdown{
+    display:none;
+    position:absolute;
+    top:calc(100% + 10px);
+    right:0;
+    z-index:30;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px 8px;
+    width:120px;
+    padding:10px;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 16px 34px -8px rgba(0,0,0,.24), 0 0 0 1px rgba(0,0,0,.04);
+}
+
+.filter-dropdown.open{
+    display:grid;
+}
+
+.filter-badge{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    padding:2px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    text-align:center;
+}
+
+.filter-badge-icon{
+    width:34px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:11px;
+    background:linear-gradient(150deg,#fff8e4,#f2e2b3);
+    box-shadow:0 4px 10px rgba(201,161,94,.3), inset 0 0 0 1px rgba(201,161,94,.35);
+    transition:transform .25s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.filter-badge:hover .filter-badge-icon,
+.filter-badge.active .filter-badge-icon{
+    transform:translateY(-2px) scale(1.06);
+}
+
+.filter-badge.active .filter-badge-name{
+    color:#a9822f;
+}
+
+.filter-badge-icon img{
+    position:relative;
+    z-index:1;
+    width:20px;
+    height:20px;
+    object-fit:contain;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.2));
+}
+
+.filter-badge-name{
+    font-size:9px;
+    font-weight:600;
+    line-height:1.2;
+    color:#3f4147;
+}
+
+.lb-tile{
+    position:relative;
+    border-radius:13px;
+    overflow:hidden;
+    aspect-ratio:3/4;
+    background:linear-gradient(135deg,#fdf6ec 0%, #fdf1f4 100%);
+    border:1px solid #eceef1;
+    cursor:pointer;
+    transition:transform .3s ease, box-shadow .3s ease;
+    animation:lbFadeIn .5s ease both;
+}
+
+.lb-tile:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 26px -12px rgba(201,161,94,.4);
+}
+
+.lb-tile:nth-child(1){ animation-delay:.03s; }
+.lb-tile:nth-child(2){ animation-delay:.07s; }
+.lb-tile:nth-child(3){ animation-delay:.11s; }
+.lb-tile:nth-child(4){ animation-delay:.15s; }
+.lb-tile:nth-child(5){ animation-delay:.19s; }
+.lb-tile:nth-child(6){ animation-delay:.23s; }
+.lb-tile:nth-child(7){ animation-delay:.27s; }
+.lb-tile:nth-child(8){ animation-delay:.31s; }
+
+@keyframes lbFadeIn{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
+}
+
+.lb-tile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:opacity .3s ease;
+}
+
+img.img-empty{
+    opacity:0;
+}
+
+.lightbox-panel.single-mode .lightbox-grid{
+    display:none;
+}
+
+.lightbox-single{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    gap:0;
+    position:relative;
+}
+
+.lightbox-panel.single-mode .lightbox-single{
+    display:flex;
+}
+
+.lb-single-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    width:100%;
+}
+
+.lb-single-frame{
+    flex:1;
+    min-width:0;
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+    aspect-ratio:3/4;
+    border-radius:16px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fdf6ec 0%, #fdf1f4 100%);
+    border:1px solid #eceef1;
+}
+
+.lb-single-frame img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:transparent;
+}
+
+.lb-nav{
+    flex-shrink:0;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid #e5e6e9;
+    background:#fff;
+    color:#3f4147;
+    font-size:19px;
+    line-height:1;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.lb-nav:hover{
+    border-color:#c9a15e;
+    box-shadow:0 0 14px rgba(201,161,94,.32);
+}
+
+.lb-counter{
+    margin-top:12px;
+    text-align:center;
+    font-size:11px;
+    color:#85878d;
+    letter-spacing:.4px;
+}
+
+/* ================================
+   SHOP — PRODUCT GRID
+================================ */
+
+.lightbox-grid.shop-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+@media(min-width:560px){
+    .lightbox-grid.shop-grid{ grid-template-columns:repeat(3,1fr); }
+}
+@media(min-width:860px){
+    .lightbox-grid.shop-grid{ grid-template-columns:repeat(4,1fr); }
+}
+@media(min-width:1200px){
+    .lightbox-grid.shop-grid{ grid-template-columns:repeat(5,1fr); }
+}
+
+.product-card{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    overflow:hidden;
+    border-radius:14px;
+    border:1px solid #eceef1;
+    background:#fff;
+    cursor:pointer;
+    transition:transform .3s ease, box-shadow .3s ease;
+    animation:lbFadeIn .5s ease both;
+}
+
+.product-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 26px -12px rgba(201,161,94,.4);
+}
+
+.product-card-img{
+    position:relative;
+    display:block;
+    width:100%;
+    aspect-ratio:3/4;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fdf6ec 0%, #fdf1f4 100%);
+}
+
+.product-card-tags{
+    position:absolute;
+    top:8px;
+    left:8px;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.product-card-tag{
+    padding:3px 8px;
+    border-radius:20px;
+    font-size:8.5px;
+    font-weight:700;
+    letter-spacing:.3px;
+    text-transform:uppercase;
+    color:#fff;
+    box-shadow:0 3px 8px rgba(0,0,0,.18);
+    white-space:nowrap;
+}
+
+.product-card-tag.tag-bestseller{
+    background:linear-gradient(120deg,#f6b83f,#e0932a);
+}
+
+.product-card-tag.tag-newarrival{
+    background:linear-gradient(120deg,var(--mint2),#0fa876);
+}
+
+.pc-fav{
+    position:absolute;
+    top:8px;
+    right:8px;
+    z-index:2;
+    width:28px;
+    height:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.88);
+    backdrop-filter:blur(4px);
+    color:#3f4147;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.16);
+    transition:.2s ease;
+}
+
+.pc-fav:hover{
+    transform:scale(1.08);
+}
+
+.pc-fav svg{
+    width:15px;
+    height:15px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.8;
+}
+
+.pc-fav.active{
+    color:#e0446b;
+}
+
+.pc-fav.active svg{
+    fill:#e0446b;
+    stroke:#e0446b;
+}
+
+.product-card-img img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.product-card-body{
+    padding:10px 12px 12px;
+}
+
+.product-card-name{
+    font-size:12px;
+    font-weight:600;
+    color:#232323;
+    margin-bottom:3px;
+}
+
+.product-card-price{
+    font-size:13px;
+    font-weight:700;
+    color:var(--mint2);
+    margin-bottom:10px;
+}
+
+.product-card-actions{
+    display:flex;
+    gap:6px;
+}
+
+.pc-btn{
+    flex:1;
+    padding:7px 0;
+    border-radius:50px;
+    border:1px solid #e5e6e9;
+    background:#fff;
+    color:#3f4147;
+    font:inherit;
+    font-size:9.5px;
+    font-weight:700;
+    letter-spacing:.2px;
+    cursor:pointer;
+    text-align:center;
+    transition:.25s;
+}
+
+.pc-btn:hover{
+    box-shadow:0 0 12px rgba(201,161,94,.35);
+}
+
+.pc-btn.pc-buy{
+    background:var(--mint2);
+    color:#fff;
+    border-color:var(--mint2);
+}
+
+/* ================================
+   SHOP — PRODUCT DETAIL VIEW
+================================ */
+
+.lb-product-info{
+    display:none;
+    margin-top:18px;
+    text-align:center;
+}
+
+.lb-suggestions{
+    display:none;
+    margin-top:28px;
+    padding-top:20px;
+    border-top:1px solid #eceef1;
+    text-align:left;
+}
+
+/* ================================
+   FEEDBACK ANIMATIONS
+   (Add to Cart / Favorite toggle)
+================================ */
+@keyframes pc-fav-pop{
+    0%{ transform:scale(1); }
+    45%{ transform:scale(1.4); }
+    100%{ transform:scale(1); }
+}
+
+.pc-fav.pop{
+    animation:pc-fav-pop .4s ease;
+}
+
+@keyframes pc-add-success{
+    0%{ background:#fff; color:#3f4147; border-color:#e5e6e9; }
+    35%{ background:var(--mint2); color:#fff; border-color:var(--mint2); transform:scale(1.04); }
+    100%{ background:#fff; color:#3f4147; border-color:#e5e6e9; transform:scale(1); }
+}
+
+.pc-btn.pc-add.added{
+    animation:pc-add-success .6s ease;
+}
+
+@keyframes badge-bump{
+    0%{ transform:scale(1); }
+    50%{ transform:scale(1.45); }
+    100%{ transform:scale(1); }
+}
+
+.cart-badge.bump{
+    animation:badge-bump .35s ease;
+}
+
+#rr-toast{
+    position:fixed;
+    left:50%;
+    bottom:26px;
+    transform:translateX(-50%) translateY(16px);
+    background:#171a21;
+    color:#fff;
+    padding:11px 22px;
+    border-radius:50px;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.2px;
+    opacity:0;
+    pointer-events:none;
+    z-index:99999;
+    transition:opacity .25s ease, transform .25s ease;
+    box-shadow:0 14px 30px rgba(0,0,0,.28);
+    display:flex;
+    align-items:center;
+    gap:7px;
+    white-space:nowrap;
+}
+
+#rr-toast.show{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
+}
+
+/* ================================
+   BOTTOM "ALL CATEGORIES" SWITCH
+   Shown at the bottom of every open
+   collection — one scrollable row,
+   cream/butter badges so PNG icons
+   pop with a premium look.
+================================ */
+.lb-cat-switch{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:14px;
+    padding:10px 2px 2px;
+    border-top:1px solid #eceef1;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.lb-cat-switch::-webkit-scrollbar{
+    display:none;
+}
+
+.lb-cat-switch-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+    flex:0 0 auto;
+    width:50px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    text-align:center;
+}
+
+.lb-cat-switch-icon{
+    width:34px;
+    height:34px;
+    border-radius:11px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(150deg,#fff8e4,#f2e2b3);
+    box-shadow:0 4px 10px rgba(201,161,94,.3), inset 0 0 0 1px rgba(201,161,94,.35);
+    transition:transform .25s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.lb-cat-switch-item:hover .lb-cat-switch-icon,
+.lb-cat-switch-item.active .lb-cat-switch-icon{
+    transform:translateY(-2px) scale(1.06);
+}
+
+.lb-cat-switch-icon img{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.2));
+}
+
+.lb-cat-switch-icon .emoji-fallback{
+    font-size:16px;
+    line-height:1;
+}
+
+.lb-cat-switch-name{
+    font-size:9px;
+    font-weight:600;
+    line-height:1.2;
+    color:#3f4147;
+}
+
+.lb-cat-switch-item.active .lb-cat-switch-name{
+    color:#a9822f;
+}
+
+.lb-suggestions h5{
+    font-family:"Playfair Display",serif;
+    font-size:15px;
+    margin-bottom:12px;
+    text-align:center;
+}
+
+.lb-suggestions-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+@media(min-width:560px){
+    .lb-suggestions-grid{ grid-template-columns:repeat(3,1fr); }
+}
+
+.lightbox-panel.showing-product .lb-product-info{
+    display:block;
+}
+
+.lb-product-info h4{
+    font-family:"Playfair Display",serif;
+    font-size:20px;
+}
+
+.lb-product-price{
+    margin-top:4px;
+    font-size:16px;
+    font-weight:700;
+    color:#7d2f3f;
+}
+
+.lb-product-desc{
+    max-width:340px;
+    margin:12px auto 0;
+    font-size:12.5px;
+    line-height:1.7;
+    color:#6b6d72;
+}
+
+.lb-qty-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:14px;
+    font-size:11px;
+    color:#6b6d72;
+}
+
+.qty-stepper{
+    display:flex;
+    align-items:center;
+    border:1px solid #e5e6e9;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.qty-stepper button{
+    width:30px;
+    height:30px;
+    border:none;
+    background:#fff;
+    color:#3f4147;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.qty-stepper button:hover{
+    background:#faf5f0;
+}
+
+.qty-stepper span{
+    width:30px;
+    text-align:center;
+    font-size:12px;
+    font-weight:600;
+}
+
+.qty-stepper.small button{
+    width:24px;
+    height:24px;
+    font-size:13px;
+}
+
+.qty-stepper.small span{
+    width:22px;
+    font-size:11px;
+}
+
+.lb-product-actions{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:16px;
+}
+
+.lb-product-actions .btn{
+    padding:10px 22px;
+    font-size:12px;
+}
+
+/* ================================
+   CART & CHECKOUT PANELS
+================================ */
+
+.panel-narrow{
+    width:min(480px,100%);
+}
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 0;
+    border-bottom:1px solid #f0f0f2;
+}
+
+.cart-item-img{
+    width:56px;
+    height:70px;
+    flex-shrink:0;
+    border-radius:10px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#fdf6ec,#fdf1f4);
+}
+
+.cart-item-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.cart-item-info{
+    flex:1;
+    min-width:0;
+}
+
+.cart-item-name{
+    font-size:12px;
+    font-weight:600;
+}
+
+.cart-item-price{
+    margin:2px 0 6px;
+    font-size:11px;
+    font-weight:700;
+    color:#7d2f3f;
+}
+
+.cart-item-remove{
+    flex-shrink:0;
+    border:none;
+    background:none;
+    color:#9b9ca2;
+    font-size:14px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.cart-item-remove:hover{
+    color:#7d2f3f;
+}
+
+.cart-empty{
+    padding:44px 0;
+    text-align:center;
+    color:#85878d;
+    font-size:13px;
+}
+
+.cart-footer{
+    margin-top:14px;
+    padding-top:14px;
+    border-top:1px solid #eceef1;
+}
+
+.cart-total-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:14px;
+    font-size:14px;
+}
+
+.cart-total-row strong{
+    font-size:18px;
+    color:#7d2f3f;
+}
+
+.checkout-summary{
+    max-height:140px;
+    overflow-y:auto;
+    font-size:12px;
+    color:#6b6d72;
+}
+
+.cs-row{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+    border-bottom:1px dashed #eceef1;
+}
+
+.cs-total{
+    display:flex;
+    justify-content:space-between;
+    padding-top:10px;
+    font-weight:700;
+    font-size:13px;
+    color:#7d2f3f;
+}
+
+#checkout-form label{
+    display:block;
+    margin-top:14px;
+    margin-bottom:6px;
+    font-size:11px;
+    font-weight:600;
+    color:#3f4147;
+}
+
+#checkout-form input,
+#checkout-form textarea{
+    width:100%;
+    padding:11px 14px;
+    border-radius:10px;
+    border:1px solid #e5e6e9;
+    font:inherit;
+    font-size:13px;
+    resize:vertical;
+}
+
+#checkout-form input:focus,
+#checkout-form textarea:focus{
+    outline:none;
+    border-color:#c9a15e;
+    box-shadow:0 0 0 3px rgba(201,161,94,.15);
+}
+
+.checkout-payment{
+    margin-top:16px;
+    padding:10px 14px;
+    border-radius:10px;
+    background:#f8f1ec;
+    font-size:12px;
+    font-weight:600;
+    color:#7d2f3f;
+}
+
+#checkout-form button[type="submit"]{
+    width:100%;
+    margin-top:18px;
+}
+
+/* ================================
+   CATEGORY POPUP — FULL SCREEN
+   (cart & checkout stay as compact
+   centered panels, unaffected)
+================================ */
+
+#lightbox{
+    padding:0;
+    align-items:stretch;
+    justify-content:stretch;
+}
+
+#lightbox-panel{
+    width:100%;
+    max-width:100%;
+    height:100vh;
+    max-height:100vh;
+    border-radius:0;
+    box-shadow:none;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+#lightbox-panel .lightbox-head{
+    position:sticky;
+    top:0;
+    z-index:2;
+    flex-shrink:0;
+    margin-bottom:0;
+    padding:12px 20px 10px;
+    background:#fff;
+    border-bottom:1px solid #eceef1;
+}
+
+#lightbox-panel .lightbox-grid{
+    flex:1;
+    overflow-y:auto;
+    padding:20px 24px 28px;
+}
+
+#lightbox-panel .lightbox-single{
+    flex:1;
+    overflow-y:auto;
+    padding:24px 24px 28px;
+}
+
+/* ================================
+   ORDER HISTORY (inside cart panel)
+================================ */
+
+.text-link{
+    display:inline-block;
+    margin-top:6px;
+    padding:0;
+    border:none;
+    background:none;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.2px;
+    color:#7d2f3f;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.order-card{
+    padding:14px 0;
+    border-bottom:1px solid #f0f0f2;
+}
+
+.order-card-date{
+    font-size:10px;
+    color:#9b9ca2;
+    margin-bottom:5px;
+}
+
+.order-card-items{
+    font-size:12px;
+    color:#3f4147;
+    line-height:1.7;
+}
+
+.order-card-total{
+    margin-top:6px;
+    font-size:12px;
+    font-weight:700;
+    color:#7d2f3f;
+}
+
+.order-card-status{
+    margin-top:4px;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:9.5px;
+    font-weight:600;
+    color:#189a6c;
+}
+
+.order-card-status::before{
+    content:"";
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#18c98b;
+    box-shadow:0 0 6px #18c98b;
+}
+
+@media(max-width:640px){
+    .lightbox-grid{ grid-template-columns:repeat(2,1fr); }
+    .lightbox-panel{ padding:24px 18px 26px; }
+    .lb-nav{ width:32px; height:32px; font-size:16px; }
+    #lightbox-panel .lightbox-head{ padding:10px 16px 9px; }
+    #lightbox-panel .lightbox-grid{ padding:16px 18px 24px; }
+    #lightbox-panel .lightbox-single{ padding:18px 18px 24px; }
+}
+
+/* =========================================================
+   FIXED PRODUCT CARD SYSTEM
+   Image = strict 3:4. Details are additional to the image.
+   Responsive columns: 2 mobile / 4 tablet / 7 desktop.
+   ========================================================= */
+
+.lightbox-grid.shop-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:14px;
+    align-items:start;
+    grid-auto-rows:auto;
+}
+
+.product-card{
+    width:100%;
+    min-width:0;
+    height:auto !important;
+    align-self:start;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    border-radius:14px;
+    box-sizing:border-box;
+}
+
+.product-card-img{
+    width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+    aspect-ratio:3 / 4 !important;
+    flex:0 0 auto !important;
+    overflow:hidden;
+    position:relative;
+    box-sizing:border-box;
+}
+
+.product-card-img img{
+    width:100% !important;
+    height:100% !important;
+    min-height:0 !important;
+    max-width:none !important;
+    display:block;
+    object-fit:cover !important;
+    object-position:center;
+}
+
+.product-card-body{
+    width:100%;
+    min-width:0;
+    min-height:82px;
+    padding:10px 10px 11px;
+    display:flex;
+    flex-direction:column;
+    box-sizing:border-box;
+}
+
+.product-card-name{
+    min-height:30px;
+    margin:0 0 3px;
+    font-size:12px;
+    line-height:1.25;
+    font-weight:600;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    overflow:hidden;
+}
+
+.product-card-price{
+    min-height:17px;
+    margin:0 0 9px;
+    font-size:13px;
+    line-height:1.25;
+    font-weight:700;
+}
+
+.product-card-actions{
+    width:100%;
+    margin-top:auto;
+    display:flex;
+    gap:6px;
+}
+
+.pc-btn{
+    min-width:0;
+    min-height:31px;
+    padding:6px 5px;
+    flex:1 1 0;
+    white-space:nowrap;
+    font-size:9.5px;
+    line-height:1;
+}
+
+/* Tablet: keep the same card proportions and give four cards per row. */
+@media (min-width:640px){
+    .lightbox-grid.shop-grid{
+        grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+        gap:14px;
+    }
+}
+
+/* Desktop: seven cards per row, matching the requested PC layout. */
+@media (min-width:1200px){
+    .lightbox-grid.shop-grid{
+        grid-template-columns:repeat(7,minmax(0,1fr)) !important;
+        gap:14px;
+    }
+}
+
+/* Small phones: still exactly two cards per row. */
+@media (max-width:420px){
+    .lightbox-grid.shop-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+        gap:10px;
+    }
+
+    .product-card-body{
+        min-height:78px;
+        padding:9px 8px 10px;
+    }
+
+    .product-card-name{
+        font-size:11px;
+        min-height:28px;
+    }
+
+    .product-card-price{
+        font-size:12px;
+        margin-bottom:8px;
+    }
+
+    .product-card-actions{
+        gap:5px;
+    }
+
+    .pc-btn{
+        min-height:29px;
+        padding:6px 3px;
+        font-size:8.5px;
+    }
+}
+
+/* Prevent the category popup's generic mobile rule from changing shop cards. */
+@media (max-width:640px){
+    #lightbox-panel .lightbox-grid.shop-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+        align-items:start;
+    }
+}
+
+
+/* FINAL CARD SIZE FIX — stable 3:4 image on every device */
+.lightbox-grid.shop-grid{
+    align-items:start !important;
+    grid-auto-rows:max-content !important;
+}
+
+.lightbox-grid.shop-grid .product-card{
+    width:100% !important;
+    min-width:0 !important;
+    height:auto !important;
+    align-self:start !important;
+}
+
+.lightbox-grid.shop-grid .product-card-img{
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:3 / 4 !important;
+    min-height:0 !important;
+    max-height:none !important;
+    flex:none !important;
+    overflow:hidden !important;
+    position:relative !important;
+}
+
+.lightbox-grid.shop-grid .product-card-img img{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    min-width:100% !important;
+    min-height:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    object-fit:cover !important;
+    object-position:center !important;
+    display:block !important;
+}
+
+.lightbox-grid.shop-grid .product-card-body{
+    flex:none !important;
+    height:auto !important;
+    min-height:82px !important;
+}
+
+@media(max-width:420px){
+    .lightbox-grid.shop-grid .product-card-body{
+        min-height:78px !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<nav class="nav">
+
+    <a href="#home" class="brand">
+
+        <img
+            class="brand-logo"
+            src="sh.jpg"
+            alt="Radhe Radhe Fashion & Lifestyle Logo"
+        >
+
+        <div class="brand-text">
+            <strong>Radhe Radhe</strong>
+            <span>Fashion & Lifestyle</span>
+        </div>
+
+    </a>
+
+    <div class="nav-links">
+
+        <a href="#home" class="active">Home</a>
+
+        <a href="#collections">
+            Collections
+        </a>
+
+        <a href="#gallery">
+            Gallery
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#why">
+            Why Us
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
+
+    <div class="nav-actions">
+
+        <button class="cart-btn" id="fav-btn" type="button" aria-label="View favorites">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21s-7.5-4.87-10.4-9.1C-.3 8.6.6 4.9 3.8 3.4c2.6-1.2 5.4-.4 6.9 1.6l1.3 1.7 1.3-1.7c1.5-2 4.3-2.8 6.9-1.6 3.2 1.5 4.1 5.2 2.2 8.5C19.5 16.13 12 21 12 21z"/>
+            </svg>
+            <span class="cart-badge hidden" id="fav-badge">0</span>
+        </button>
+
+        <button class="cart-btn" id="cart-btn" type="button" aria-label="View cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="cart-badge hidden" id="cart-badge">0</span>
+        </button>
+
+        <a
+            href="tel:9153401395"
+            class="nav-contact"
+        >
+
+        <svg
+            class="social-svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+        >
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+            19.79 19.79 0 0 1-8.63-3.07
+            19.5 19.5 0 0 1-6-6
+            19.79 19.79 0 0 1-3.07-8.67
+            A2 2 0 0 1 4.11 2h3
+            a2 2 0 0 1 2 1.72
+            c.12.9.33 1.78.62 2.63
+            a2 2 0 0 1-.45 2.11L8 9.73
+            a16 16 0 0 0 6 6l1.27-1.27
+            a2 2 0 0 1 2.11-.45
+            c.85.29 1.73.5 2.63.62
+            A2 2 0 0 1 22 16.92z"/>
+        </svg>
+
+            Call Us
+
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+<div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+        <span>New Festive Collection In-Store</span>
+        <span>Sarees · Suits · Kruti</span>
+        <span>Girls, Boys &amp; Kids Wear</span>
+        <span>Visit Us at Pethiya Bazar, Phulwari Sharif</span>
+        <span>New Festive Collection In-Store</span>
+        <span>Sarees · Suits · Kruti</span>
+        <span>Girls, Boys &amp; Kids Wear</span>
+        <span>Visit Us at Pethiya Bazar, Phulwari Sharif</span>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main id="home">
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <div class="section-kicker">
+            Trending Fashion Store
+        </div>
+
+        <h1>
+            Radhe Radhe
+        </h1>
+
+        <div class="hero-subtitle">
+            Fashion & Lifestyle
+        </div>
+
+        <div class="hero-categories">
+
+            <button class="hero-cat-btn" data-filter="saree">Sarees</button>
+            <button class="hero-cat-btn" data-filter="lehenga">Lehenga</button>
+            <button class="hero-cat-btn" data-filter="kurti">Kurti & Suit</button>
+            <button class="hero-cat-btn" data-filter="boys">Men's Wear</button>
+            <button class="hero-cat-btn" data-filter="girls">Women's Wear</button>
+            <button class="hero-cat-btn" data-filter="kids">Kid's Wear</button>
+            <button class="hero-cat-btn" data-filter="suit">Blazer</button>
+
+        </div>
+
+        <div class="hero-quote">
+            “Style for Every Generation”
+        </div>
+
+        <div class="divider-heart">
+            <span>♥</span>
+        </div>
+
+        <p class="hero-description">
+
+            Discover a carefully selected collection
+            of fashion for women, girls, boys and kids —
+            all under one roof. Explore beautiful styles,
+            comfortable everyday wear and fashionable
+            choices for every occasion.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#collections"
+                class="btn btn-primary"
+            >
+                Explore Collection&nbsp; →
+            </a>
+
+            <a
+                href="https://wa.me/919153401395"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-light"
+            >
+
+                <svg
+                    class="social-svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                >
+                    <path d="M20.52 3.48A11.78 11.78 0 0 0 12.08 0
+                    C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13
+                    1.59 5.92L.13 24l6.38-1.67a11.8 11.8 0 0 0
+                    5.57 1.41h.01c6.53 0 11.84-5.31 11.84-11.84
+                    0-3.17-1.24-6.15-3.41-8.42zM12.09 21.75h-.01
+                    a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.79.99
+                    1.01-3.69-.23-.38a9.81 9.81 0 1 1 8.39 4.66z"/>
+                    <path d="M17.56 14.42c-.3-.15-1.77-.87-2.04-.97
+                    -.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17
+                    -.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5
+                    -.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61
+                    .13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37
+                    -.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5
+                    -.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02
+                    -1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21
+                    5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12
+                    .57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42
+                    -.07-.12-.27-.2-.57-.35z"/>
+                </svg>
+
+                WhatsApp Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="hero-frame">
+
+            <img
+                src="sh.jpg"
+                alt="Radhe Radhe Fashion Store"
+            >
+
+        </div>
+
+        <div class="hero-badge">
+
+            <div class="badge-check">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    100% Genuine Products
+                </strong>
+
+                <small>
+                    Trusted Quality&nbsp; | &nbsp;Best Prices
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTIONS
+===================================================== -->
+
+<section
+    class="collections"
+    id="collections"
+>
+
+    <div class="section-head">
+
+        <div>
+
+            <div class="section-kicker">
+                Explore Our
+            </div>
+
+            <h2 class="section-title">
+                Collections
+            </h2>
+
+            <p class="section-description">
+                Every style. Every occasion.
+                All in one place.
+            </p>
+
+        </div>
+
+        <a
+            href="#gallery"
+            class="view-all"
+        >
+            View All Collections&nbsp; →
+        </a>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="a.png" alt="" class="icon-png">
+                <span class="icon-emoji">🥻</span>
+            </div>
+
+            <strong>
+                Saree
+            </strong>
+
+            <span>
+                Graceful & Elegant
+            </span>
+
+        </a>
+
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="g.png" alt="" class="icon-png">
+                <span class="icon-emoji">👗</span>
+            </div>
+
+            <strong>
+                Lehenga
+            </strong>
+
+            <span>
+                Bridal & Festive
+            </span>
+
+        </a>
+
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="c.png" alt="" class="icon-png">
+                <span class="icon-emoji">👘</span>
+            </div>
+
+            <strong>
+                Kurti &amp; Suit
+            </strong>
+
+            <span>
+                Trendy & Comfortable
+            </span>
+
+        </a>
+
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="e.png" alt="" class="icon-png">
+                <span class="icon-emoji">👔</span>
+            </div>
+
+            <strong>
+                Men's Wear
+            </strong>
+
+            <span>
+                Smart & Trendy
+            </span>
+
+        </a>
+
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="d.png" alt="" class="icon-png">
+                <span class="icon-emoji">👚</span>
+            </div>
+
+            <strong>
+                Women's Wear
+            </strong>
+
+            <span>
+                Elegant & Fashionable
+            </span>
+
+        </a>
+
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="f.png" alt="" class="icon-png">
+                <span class="icon-emoji">🧸</span>
+            </div>
+
+            <strong>
+                Kid's Wear
+            </strong>
+
+            <span>
+                Little Fashion Stars
+            </span>
+
+        </a>
+
+
+        <a href="#gallery" class="category">
+
+            <div class="category-icon">
+                <img src="b.png" alt="" class="icon-png">
+                <span class="icon-emoji">🧥</span>
+            </div>
+
+            <strong>
+                Blazer
+            </strong>
+
+            <span>
+                Classic & Stylish
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section
+    class="gallery-section"
+    id="gallery"
+>
+
+    <div class="gallery-layout">
+
+        <div class="gallery-intro">
+
+            <div class="section-kicker">
+                Our Gallery
+            </div>
+
+            <h2 class="section-title">
+                Latest Collection
+            </h2>
+
+            <p>
+                Explore our collection of traditional
+                and modern fashion for the whole family.
+                Visit our store for more styles and choices.
+            </p>
+
+            <div class="divider-heart">
+                <span>♥</span>
+            </div>
+
+            <button
+                type="button"
+                id="view-all-collections-btn"
+                class="btn btn-primary"
+            >
+                Explore All Collections&nbsp; →
+            </button>
+
+        </div>
+
+
+        <div>
+
+            <div class="gallery-tabs" role="tablist" aria-label="Filter gallery by category">
+                <button class="gallery-tab active" data-filter="all">All</button>
+                <button class="gallery-tab" data-filter="saree">Sarees</button>
+                <button class="gallery-tab" data-filter="lehenga">Lehenga</button>
+                <button class="gallery-tab" data-filter="kurti">Kurti &amp; Suit</button>
+                <button class="gallery-tab" data-filter="boys">Men's Wear</button>
+                <button class="gallery-tab" data-filter="girls">Women's Wear</button>
+                <button class="gallery-tab" data-filter="kids">Kid's Wear</button>
+                <button class="gallery-tab" data-filter="suit">Blazer</button>
+                <button class="gallery-tab" data-filter="store">Our Store</button>
+            </div>
+
+            <div class="gallery">
+
+            <div class="gallery-item" data-category="saree" tabindex="0" role="button" aria-label="View full Saree collection">
+
+                <img
+                    src="2.jpg"
+                    alt="Radhe Radhe Saree Collection"
+                    loading="lazy"
+                >
+
+                <div class="gallery-new">New</div>
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Saree Collection
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="lehenga" tabindex="0" role="button" aria-label="View full Lehenga collection">
+
+                <img
+                    src="3.jpg"
+                    alt="Radhe Radhe Lehenga Collection"
+                    loading="lazy"
+                >
+
+                <div class="gallery-new">New</div>
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Lehenga Collection
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="kurti" tabindex="0" role="button" aria-label="View full Kurti and Suit collection">
+
+                <img
+                    src="7.jpg"
+                    alt="Radhe Radhe Kurti and Suit Collection"
+                    loading="lazy"
+                >
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Kurti &amp; Suits Collection
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="boys" tabindex="0" role="button" aria-label="View full Men's Wear collection">
+
+                <img
+                    src="5.jpg"
+                    alt="Radhe Radhe Men's Wear"
+                    loading="lazy"
+                >
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Men's Wear
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="girls" tabindex="0" role="button" aria-label="View full Women's Wear collection">
+
+                <img
+                    src="4.jpg"
+                    alt="Radhe Radhe Women's Wear"
+                    loading="lazy"
+                >
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Women's Wear
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="kids" tabindex="0" role="button" aria-label="View full Kid's Wear collection">
+
+                <img
+                    src="6.jpg"
+                    alt="Radhe Radhe Kid's Wear"
+                    loading="lazy"
+                >
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Kid's Wear
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="suit" tabindex="0" role="button" aria-label="View full Blazer collection">
+
+                <img
+                    src="3.jpg"
+                    alt="Radhe Radhe Blazer Collection"
+                    loading="lazy"
+                >
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Blazer Collection
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item" data-category="store" tabindex="0" role="button" aria-label="View full Store Photos collection">
+
+                <img
+                    src="sh.jpg"
+                    alt="Radhe Radhe Store"
+                    loading="lazy"
+                >
+
+                <div class="gallery-view">View Collection</div>
+
+                <div class="gallery-label">
+                    Our Store View
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SHOP THE OCCASION
+===================================================== -->
+
+<section class="occasion reveal">
+
+    <div class="occasion-box">
+
+        <svg class="occasion-motif" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 10c40 15 55 45 40 80-9 21-32 26-44 12-9-11-3-27 10-29 9-1 15 6 13 14"
+                  fill="none" stroke="#c9a15e" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="100" cy="10" r="4" fill="#c9a15e"/>
+        </svg>
+
+        <div class="occasion-head">
+            <div class="section-kicker">Dress The Moment</div>
+            <h2 class="section-title" style="font-size:32px;">Shop by Occasion</h2>
+            <p class="section-description" style="margin-top:12px;">
+                Not sure where to start? Pick the moment you're
+                dressing for and we'll point you the right way.
+            </p>
+        </div>
+
+        <div class="occasion-grid">
+
+            <a href="#contact" class="occasion-card">
+                <div class="oc-icon">💍</div>
+                <strong>Wedding Season</strong>
+                <span>Sarees &amp; suits for the whole family</span>
+            </a>
+
+            <a href="#contact" class="occasion-card">
+                <div class="oc-icon">🪔</div>
+                <strong>Festive Wear</strong>
+                <span>Kruti &amp; ethnic sets for celebrations</span>
+            </a>
+
+            <a href="#contact" class="occasion-card">
+                <div class="oc-icon">🎒</div>
+                <strong>School &amp; Daily</strong>
+                <span>Comfortable everyday wear for kids</span>
+            </a>
+
+            <a href="#contact" class="occasion-card">
+                <div class="oc-icon">🧵</div>
+                <strong>Everyday Fresh</strong>
+                <span>Easy, stylish basics for the whole week</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STYLE DIARY / INSTAGRAM
+===================================================== -->
+
+<section class="diary reveal">
+
+    <div class="diary-box">
+
+        <div>
+            <div class="section-kicker">On Instagram</div>
+            <h2 class="section-title" style="font-size:32px;">Our Style Diary</h2>
+            <p class="section-description" style="margin-top:12px; max-width:340px;">
+                New arrivals, styling ideas and everyday looks —
+                a peek before you visit the store.
+            </p>
+            <a
+                href="https://instagram.com/ayaansh_shah_"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary diary-follow"
+            >
+                Follow @ayaansh_shah_&nbsp; →
+            </a>
+        </div>
+
+        <div class="diary-grid">
+            <div class="diary-tile"><img src="2.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+            <div class="diary-tile"><img src="3.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+            <div class="diary-tile"><img src="4.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+            <div class="diary-tile"><img src="5.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+            <div class="diary-tile"><img src="6.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+            <div class="diary-tile"><img src="sh.jpg" alt="Radhe Radhe store" loading="lazy"></div>
+            <div class="diary-tile"><img src="2.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+            <div class="diary-tile"><img src="3.jpg" alt="Radhe Radhe style" loading="lazy"></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TRUST / WHY US
+===================================================== -->
+
+<section
+    class="why"
+    id="why"
+>
+
+    <div class="why-box">
+
+        <div class="why-content">
+
+            <div class="section-kicker">
+                Why Choose Us
+            </div>
+
+            <h2>
+                Your Trust.<br>
+                Our Identity.
+            </h2>
+
+            <p>
+                At Radhe Radhe, we believe in offering
+                not just fashion, but a complete shopping
+                experience with quality, trust and care.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <strong>
+                        100% Genuine Products
+                    </strong>
+
+                    <span>
+                        Original & Trusted Quality
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ♡
+                </div>
+
+                <div>
+                    <strong>
+                        Trendy & Traditional
+                    </strong>
+
+                    <span>
+                        Latest & Classic Styles
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ✣
+                </div>
+
+                <div>
+                    <strong>
+                        Wide Range
+                    </strong>
+
+                    <span>
+                        For All Age Groups
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ◆
+                </div>
+
+                <div>
+                    <strong>
+                        Friendly Support
+                    </strong>
+
+                    <span>
+                        Always Here to Help
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ₹
+                </div>
+
+                <div>
+                    <strong>
+                        Affordable Prices
+                    </strong>
+
+                    <span>
+                        Best Value for Money
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ♡
+                </div>
+
+                <div>
+                    <strong>
+                        Local Business
+                    </strong>
+
+                    <span>
+                        Supporting Our Community
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="signature">
+
+            <div class="signature-name">
+                Radhe Radhe
+            </div>
+
+            <div class="signature-heart">
+                ♡
+            </div>
+
+            <small>
+                FASHION • FAMILY • FOREVER
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXTRA STORE DETAILS
+===================================================== -->
+
+<section class="details-strip">
+
+    <div class="details-grid">
+
+        <div class="detail-card">
+
+            <div class="detail-icon">
+                ✦
+            </div>
+
+            <strong>
+                Fashion for Everyone
+            </strong>
+
+            <span>
+                Women's, girls', boys' and kids' styles
+                under one roof.
+            </span>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <div class="detail-icon">
+                ♡
+            </div>
+
+            <strong>
+                Quality First
+            </strong>
+
+            <span>
+                Carefully selected styles with
+                comfort and quality in mind.
+            </span>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <div class="detail-icon">
+                ₹
+            </div>
+
+            <strong>
+                Value & Choice
+            </strong>
+
+            <span>
+                Fashionable choices at
+                customer-friendly prices.
+            </span>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <div class="detail-icon">
+                📍
+            </div>
+
+            <strong>
+                Easy to Visit
+            </strong>
+
+            <span>
+                Conveniently located at Pethiya Bazar,
+                Phulwari Sharif, Patna.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="contact"
+    id="about"
+>
+
+    <div class="about-box"
+         style="
+         position:relative;
+         overflow:hidden;
+         padding:42px 38px;
+         border:1px solid #e5e6e9;
+         border-radius:25px;
+         background:linear-gradient(120deg,#fff,#fbfcfb,#f9f7fc);
+         box-shadow:0 20px 55px rgba(0,0,0,.05);
+         margin-bottom:55px;
+         ">
+
+        <div
+            class="section-kicker"
+        >
+            About Radhe Radhe
+        </div>
+
+        <h2
+            style="
+            margin-top:11px;
+            font-family:'Playfair Display',serif;
+            font-size:39px;
+            line-height:1.1;
+            "
+        >
+            Fashion for every
+            beautiful moment.
+        </h2>
+
+        <p
+            style="
+            max-width:790px;
+            margin-top:17px;
+            color:#74767d;
+            font-size:13px;
+            line-height:1.9;
+            "
+        >
+            Welcome to <strong>Radhe Radhe</strong>,
+            a fashion and lifestyle destination at
+            Pethiya Bazar, Phulwari Sharif, Patna.
+            We bring together stylish collections for
+            women, girls, boys and kids in one convenient
+            place.
+        </p>
+
+        <p
+            style="
+            max-width:790px;
+            margin-top:11px;
+            color:#74767d;
+            font-size:13px;
+            line-height:1.9;
+            "
+        >
+            From elegant sarees and suits to Kruti,
+            girls wear, boys wear and kids wear,
+            our collection is selected with style,
+            comfort and everyday needs in mind.
+            Whether you are shopping for a special
+            occasion or refreshing your everyday wardrobe,
+            Radhe Radhe is here to make fashion shopping
+            simple and enjoyable.
+        </p>
+
+    </div>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+    <div
+        class="contact-layout"
+        id="contact"
+    >
+
+        <div class="contact-intro">
+
+            <div class="section-kicker">
+                Get In Touch
+            </div>
+
+            <h2 class="section-title">
+                Visit Our Store
+            </h2>
+
+            <p>
+                Have a question or want to know more
+                about our collection? We would love
+                to hear from you.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="contact-cards">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <svg
+                            class="social-svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                            19.79 19.79 0 0 1-8.63-3.07
+                            19.5 19.5 0 0 1-6-6
+                            19.79 19.79 0 0 1-3.07-8.67
+                            A2 2 0 0 1 4.11 2h3
+                            a2 2 0 0 1 2 1.72
+                            c.12.9.33 1.78.62 2.63
+                            a2 2 0 0 1-.45 2.11L8 9.73
+                            a16 16 0 0 0 6 6l1.27-1.27
+                            a2 2 0 0 1 2.11-.45
+                            c.85.29 1.73.5 2.63.62
+                            A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+
+                    </div>
+
+                    <small>
+                        Call / WhatsApp
+                    </small>
+
+                    <span>
+
+                        <a
+                            href="tel:9153401395"
+                            class="phone-link"
+                        >
+                            9153401395
+                        </a>
+
+                        <br>
+
+                        <a
+                            href="tel:7325062752"
+                            class="phone-link"
+                        >
+                            7325062752
+                        </a>
+
+                    </span>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <svg
+                            class="social-svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            aria-hidden="true"
+                        >
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5"
+                            />
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="4"
+                            />
+
+                            <circle
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                                fill="currentColor"
+                                stroke="none"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <small>
+                        Instagram
+                    </small>
+
+                    <span>
+
+                        <a
+                            href="https://instagram.com/ayaansh_shah_"
+                            target="_blank"
+                            rel="noopener"
+                            class="username-link"
+                        >
+                            @ayaansh_shah_
+                        </a>
+
+                    </span>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <svg
+                            class="social-svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+
+                    <small>
+                        Address
+                    </small>
+
+                    <span>
+                        Pethiya Bazar,<br>
+                        Phulwari Sharif,<br>
+                        Patna, Bihar
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+                <a
+                    href="https://wa.me/919153401395"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                >
+
+                    <svg
+                        class="social-svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path d="M20.52 3.48A11.78 11.78 0 0 0 12.08 0
+                        C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13
+                        1.59 5.92L.13 24l6.38-1.67a11.8 11.8 0 0 0
+                        5.57 1.41h.01c6.53 0 11.84-5.31 11.84-11.84
+                        0-3.17-1.24-6.15-3.41-8.42zM12.09 21.75h-.01
+                        a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.79.99
+                        1.01-3.69-.23-.38a9.81 9.81 0 1 1 8.39 4.66z"/>
+
+                        <path d="M17.56 14.42c-.3-.15-1.77-.87-2.04-.97
+                        -.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17
+                        -.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5
+                        -.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61
+                        .13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37
+                        -.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5
+                        -.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02
+                        -1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21
+                        5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12
+                        .57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42
+                        -.07-.12-.27-.2-.57-.35z"/>
+                    </svg>
+
+                    Chat on WhatsApp
+
+                </a>
+
+                <a
+                    href="https://instagram.com/ayaansh_shah_"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-light"
+                >
+
+                    <svg
+                        class="social-svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        aria-hidden="true"
+                    >
+                        <rect
+                            x="3"
+                            y="3"
+                            width="18"
+                            height="18"
+                            rx="5"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="4"
+                        />
+
+                        <circle
+                            cx="17.5"
+                            cy="6.5"
+                            r="1"
+                            fill="currentColor"
+                            stroke="none"
+                        />
+                    </svg>
+
+                    Follow on Instagram
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="map-card">
+
+            <iframe
+                src="https://www.google.com/maps?q=Pethiya%20Bazar%2C%20Phulwari%20Sharif%2C%20Patna%2C%20Bihar&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <a
+                class="map-button"
+                href="https://maps.app.goo.gl/hmNDRTgCBczPwb798"
+                target="_blank"
+                rel="noopener"
+            >
+                📍 View on Google Maps&nbsp; →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-inner">
+
+    <div class="footer-brand">
+
+        <img
+            src="sh.jpg"
+            alt="Radhe Radhe Logo"
+        >
+
+        <div>
+
+            <strong>
+                Radhe Radhe
+            </strong>
+
+            <small>
+                FASHION & LIFESTYLE
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-center">
+
+        <div class="footer-motto">
+            STYLE&nbsp; • &nbsp;QUALITY&nbsp; • &nbsp;TRUST
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-address">
+            Pethiya Bazar, Phulwari Sharif, Patna, Bihar
+        </div>
+
+    </div>
+
+
+    <div class="footer-right">
+
+        <div class="socials">
+
+            <a
+                class="social"
+                href="https://instagram.com/ayaansh_shah_"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+            >
+
+                <svg
+                    class="social-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                >
+                    <rect
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        rx="5"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4"
+                    />
+
+                    <circle
+                        cx="17.5"
+                        cy="6.5"
+                        r="1"
+                        fill="currentColor"
+                        stroke="none"
+                    />
+                </svg>
+
+            </a>
+
+
+            <a
+                class="social"
+                href="https://wa.me/919153401395"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+            >
+
+                <svg
+                    class="social-svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                >
+                    <path d="M20.52 3.48A11.78 11.78 0 0 0 12.08 0
+                    C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13
+                    1.59 5.92L.13 24l6.38-1.67a11.8 11.8 0 0 0
+                    5.57 1.41h.01c6.53 0 11.84-5.31 11.84-11.84
+                    0-3.17-1.24-6.15-3.41-8.42zM12.09 21.75h-.01
+                    a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.79.99
+                    1.01-3.69-.23-.38a9.81 9.81 0 1 1 8.39 4.66z"/>
+
+                    <path d="M17.56 14.42c-.3-.15-1.77-.87-2.04-.97
+                    -.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17
+                    -.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5
+                    -.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61
+                    .13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37
+                    -.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5
+                    -.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02
+                    -1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21
+                    5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12
+                    .57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42
+                    -.07-.12-.27-.2-.57-.35z"/>
+                </svg>
+
+            </a>
+
+
+            <a
+                class="social"
+                href="https://maps.app.goo.gl/hmNDRTgCBczPwb798"
+                target="_blank"
+                rel="noopener"
+                aria-label="Google Maps"
+            >
+                📍
+            </a>
+
+        </div>
+
+        <div class="footer-copy">
+
+            © 2026 Radhe Radhe. All rights reserved.<br>
+
+            Designed with
+            <span class="footer-love">♥</span>
+            for our valued customers.
+
+        </div>
+
+    </div>
+
+</div>
+
+</footer>
+
+<a
+    class="wa-fab"
+    href="https://wa.me/919153401395"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.52 3.48A11.78 11.78 0 0 0 12.08 0
+        C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13
+        1.59 5.92L.13 24l6.38-1.67a11.8 11.8 0 0 0
+        5.57 1.41h.01c6.53 0 11.84-5.31 11.84-11.84
+        0-3.17-1.24-6.15-3.41-8.42zM12.09 21.75h-.01
+        a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.79.99
+        1.01-3.69-.23-.38a9.81 9.81 0 1 1 8.39 4.66z"/>
+        <path d="M17.56 14.42c-.3-.15-1.77-.87-2.04-.97
+        -.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17
+        -.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5
+        -.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61
+        .13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37
+        -.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5
+        -.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02
+        -1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21
+        5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12
+        .57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42
+        -.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+</a>
+
+<nav class="quick-bar" aria-label="Quick actions">
+    <a href="tel:9153401395" class="qb-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Call
+    </a>
+    <a href="https://wa.me/919153401395" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.52 3.48A11.78 11.78 0 0 0 12.08 0C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13 1.59 5.92L.13 24l6.38-1.67a11.8 11.8 0 0 0 5.57 1.41h.01c6.53 0 11.84-5.31 11.84-11.84 0-3.17-1.24-6.15-3.41-8.42zM12.09 21.75h-.01a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.79.99 1.01-3.69-.23-.38a9.81 9.81 0 1 1 8.39 4.66z"/>
+        </svg>
+        WhatsApp
+    </a>
+    <a href="https://maps.app.goo.gl/hmNDRTgCBczPwb798" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Directions
+    </a>
+</nav>
+
+<div class="lightbox-overlay" id="lightbox">
+    <div class="lightbox-panel" id="lightbox-panel">
+        <div class="lightbox-head">
+            <button class="lb-head-btn" id="lightbox-home-btn" type="button" aria-label="Go to Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 11.5 12 4l9 7.5"/>
+                    <path d="M5.5 10v9a1 1 0 0 0 1 1H9.5v-6h5v6h3a1 1 0 0 0 1-1v-9"/>
+                </svg>
+            </button>
+            <div class="lb-head-title">
+                <h3 id="lightbox-title">Collection</h3>
+                <span id="lightbox-sub">Elegance draped in tradition</span>
+            </div>
+            <div class="lb-head-actions">
+                <div class="lb-filter-wrap">
+                    <button class="lb-head-btn" id="lightbox-filter-btn" type="button" aria-label="Filter products">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 5h16M7 12h10M10 19h4"/>
+                        </svg>
+                    </button>
+                    <div class="filter-dropdown" id="filter-dropdown"></div>
+                </div>
+                <button class="lb-head-btn" id="lightbox-cart-btn" type="button" aria-label="View cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-badge hidden" id="lb-cart-badge">0</span>
+                </button>
+                <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+            </div>
+        </div>
+        <div class="lightbox-grid" id="lightbox-grid"></div>
+        <div class="lightbox-single" id="lightbox-single">
+            <div class="lb-single-row">
+                <button class="lb-nav" id="lb-prev" aria-label="Previous photo">‹</button>
+                <div class="lb-single-frame">
+                    <img id="lb-single-img" src="" alt="">
+                </div>
+                <button class="lb-nav" id="lb-next" aria-label="Next photo">›</button>
+            </div>
+            <div class="lb-counter" id="lb-counter">1 / 8</div>
+
+            <div class="lb-product-info" id="lb-product-info">
+                <h4 id="lb-product-name">Product Name</h4>
+                <div class="lb-product-price" id="lb-product-price">₹0</div>
+                <p class="lb-product-desc" id="lb-product-desc"></p>
+
+                <div class="lb-qty-row">
+                    <span>Qty</span>
+                    <div class="qty-stepper">
+                        <button type="button" id="lb-qty-minus" aria-label="Decrease quantity">−</button>
+                        <span id="lb-qty-value">1</span>
+                        <button type="button" id="lb-qty-plus" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+
+                <div class="lb-product-actions">
+                    <button class="btn btn-light" id="lb-add-cart" type="button">Add to Cart</button>
+                    <button class="btn btn-primary" id="lb-buy-now" type="button">Buy Now</button>
+                </div>
+
+                <div class="lb-suggestions" id="lb-suggestions">
+                    <h5>You May Also Like</h5>
+                    <div class="lb-suggestions-grid" id="lb-suggestions-grid"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lb-cat-switch" id="lb-cat-switch"></div>
+    </div>
+</div>
+
+<div class="lightbox-overlay" id="cart-overlay">
+    <div class="lightbox-panel panel-narrow" id="cart-panel">
+        <div class="lightbox-head">
+            <div>
+                <h3>Your Cart</h3>
+                <span id="cart-sub">0 items</span>
+                <br>
+                <button type="button" class="text-link" id="view-orders-link">View Order History</button>
+            </div>
+            <button class="lightbox-close" id="cart-close" aria-label="Close">✕</button>
+        </div>
+
+        <div id="cart-view">
+            <div id="cart-items"></div>
+            <div class="cart-empty" id="cart-empty">Your cart is empty.</div>
+
+            <div class="cart-footer" id="cart-footer">
+                <div class="cart-total-row">
+                    <span>Total</span>
+                    <strong id="cart-total">₹0</strong>
+                </div>
+                <button class="btn btn-primary" id="cart-checkout-btn" type="button">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <div id="order-history-view" style="display:none;">
+            <button type="button" class="text-link" id="back-to-cart-link">‹ Back to Cart</button>
+            <div id="order-history-list"></div>
+            <div class="cart-empty" id="order-history-empty" style="display:none;">No past orders yet.</div>
+        </div>
+    </div>
+</div>
+
+<div class="lightbox-overlay" id="fav-overlay">
+    <div class="lightbox-panel" id="fav-panel">
+        <div class="lightbox-head">
+            <div>
+                <h3>Your Favorites</h3>
+                <span id="fav-sub">0 items</span>
+            </div>
+            <button class="lightbox-close" id="fav-close" aria-label="Close">✕</button>
+        </div>
+        <div class="lightbox-grid shop-grid" id="fav-grid"></div>
+        <div class="cart-empty" id="fav-empty" style="display:none;">No favorites yet — tap the ♡ on any item to save it here.</div>
+    </div>
+</div>
+
+<div class="lightbox-overlay" id="checkout-overlay">
+    <div class="lightbox-panel panel-narrow" id="checkout-panel">
+        <div class="lightbox-head">
+            <div>
+                <h3>Checkout</h3>
+                <span>Order goes to us via WhatsApp</span>
+            </div>
+            <button class="lightbox-close" id="checkout-close" aria-label="Close">✕</button>
+        </div>
+
+        <div class="checkout-summary" id="checkout-summary"></div>
+
+        <form id="checkout-form">
+            <label for="checkout-name">Full Name</label>
+            <input type="text" id="checkout-name" required>
+
+            <label for="checkout-phone">Phone Number</label>
+            <input type="tel" id="checkout-phone" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="checkout-address">Delivery Address</label>
+            <textarea id="checkout-address" rows="3" required></textarea>
+
+            <div class="checkout-payment">💰 Payment Method: Cash on Delivery</div>
+
+            <button class="btn btn-primary" type="submit">Send Order on WhatsApp</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     SIMPLE JAVASCRIPT
+===================================================== -->
+
+<script src="./product.js"></script>
+<script>
+
+/* Any product photo that hasn't been added to the folder yet
+   quietly fades out, letting the warm theme background show
+   through instead of a broken-image icon. */
+function markImageEmpty(img){
+    img.addEventListener('error', function(){
+        this.onerror = null;
+        this.classList.add('img-empty');
+    }, { once:true });
+}
+
+document.querySelectorAll('img').forEach(markImageEmpty);
+
+/* Category badges — if a custom PNG logo (a.png..f.png) is
+   added to the shop folder, show it in place of the emoji.
+   Until then, the emoji keeps showing as-is. */
+document.querySelectorAll('.category-icon').forEach(function(box){
+    const pngIcon = box.querySelector('.icon-png');
+    const emojiIcon = box.querySelector('.icon-emoji');
+    if(!pngIcon || !emojiIcon){ return; }
+
+    pngIcon.addEventListener('load', function(){
+        emojiIcon.style.display = 'none';
+        pngIcon.style.display = 'block';
+    });
+    pngIcon.addEventListener('error', function(){
+        pngIcon.style.display = 'none';
+    });
+});
+
+/* Subtle one-time reveal-on-scroll for key content blocks */
+const revealTargets = document.querySelectorAll(
+    '.reveal, .section-head, .why-box, .gallery-layout, .details-grid, .contact-layout, .category-grid'
+);
+
+revealTargets.forEach(function(el){ el.classList.add('reveal'); });
+
+const revealObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+        if(entry.isIntersecting){
+            entry.target.classList.add('in-view');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold:0.15 });
+
+revealTargets.forEach(function(el){ revealObserver.observe(el); });
+
+/* Gallery category filter */
+const galleryTabs = document.querySelectorAll('.gallery-tab');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+function applyGalleryFilter(filter){
+    galleryTabs.forEach(function(t){
+        t.classList.toggle('active', t.getAttribute('data-filter') === filter);
+    });
+
+    galleryItems.forEach(function(item){
+        const match = filter === 'all' || item.getAttribute('data-category') === filter;
+        item.classList.toggle('gi-hidden', !match);
+    });
+}
+
+galleryTabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+        applyGalleryFilter(tab.getAttribute('data-filter'));
+    });
+});
+
+/* Hero category chips — jump straight to the filtered gallery */
+document.querySelectorAll('.hero-cat-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+        const filter = btn.getAttribute('data-filter');
+        const matchingTab = document.querySelector('.gallery-tab[data-filter="' + filter + '"]');
+        if(matchingTab){
+            applyGalleryFilter(filter);
+        }
+        const gallerySection = document.getElementById('gallery');
+        if(gallerySection){
+            gallerySection.scrollIntoView({ behavior:'smooth', block:'start' });
+        }
+    });
+});
+
+/* Per-category lightbox — opens a full collection of photos,
+   with a tap-to-zoom single photo viewer with prev/next. */
+const CATEGORY_INFO = {
+    saree:   { label: 'Saree Collection', shortLabel: 'Saree', tagline: 'Elegance draped in tradition', prefix: 'saree', count: 8, shop: true },
+    lehenga: { label: 'Lehenga Collection', shortLabel: 'Lehenga', tagline: 'Bridal grace, festive charm', prefix: 'lehenga', count: 8, shop: true },
+    kurti:   { label: 'Kurti & Suits Collection', shortLabel: 'Kurti & Suit', tagline: 'Comfort meets everyday style', prefix: 'kurti', count: 8, shop: true },
+    boys:    { label: "Men's Wear", shortLabel: "Men's", tagline: 'Smart looks for every occasion', prefix: 'boys', count: 8, shop: true },
+    girls:   { label: "Women's Wear", shortLabel: "Women's", tagline: 'Elegant & fashionable styles', prefix: 'girls', count: 8, shop: true },
+    kids:    { label: "Kid's Wear", shortLabel: "Kid's", tagline: 'Comfort that keeps up with play', prefix: 'kids', count: 8, shop: true },
+    suit:    { label: 'Blazer Collection', shortLabel: 'Blazer', tagline: 'Sharp, tailored, premium', prefix: 'suit', count: 8, shop: true },
+    store:   { label: 'Our Store', shortLabel: 'Store', tagline: 'A closer look inside Radhe Radhe', prefix: 'store', count: 6, shop: false }
+};
+
+/* Icons used for the home Collections badges and the
+   in-collection "switch category" strip. Drop in your own
+   PNGs (recommended: transparent background) — emoji is
+   shown until then. */
+const CATEGORY_ICONS = {
+    saree:   { png: 'a.png', emoji: '🥻' },
+    lehenga: { png: 'g.png', emoji: '👗' },
+    kurti:   { png: 'c.png', emoji: '👘' },
+    boys:    { png: 'e.png', emoji: '👔' },
+    girls:   { png: 'd.png', emoji: '👚' },
+    kids:    { png: 'f.png', emoji: '🧸' },
+    suit:    { png: 'b.png', emoji: '🧥' },
+    store:   { png: 'sh.jpg', emoji: '🏬' }
+};
+
+/* Optional: give a subcategory its own small PNG badge icon.
+   Key = exact subcategory string used in product.js, value = image path.
+   Any subcategory not listed here falls back to an emoji badge. */
+const SUBCATEGORY_ICONS = {
+    all: 'all.png',
+    // Silk: 'silk-icon.png',
+    // Cotton: 'cotton-icon.png',
+};
+
+/* ================================
+   PRODUCT CATALOG
+   Sample items — replace with your
+   real products, photos and prices.
+   Add more by copying a block below.
+================================ */
+// Product data is loaded from product.js
+const PRODUCTS = Array.isArray(window.PRODUCTS) ? window.PRODUCTS : [];
+if (!PRODUCTS.length) {
+    console.error('Radhe Radhe Fashion: product.js did not load or contains no products.');
+}
+
+function getProductsByCategory(cat){
+    if(cat === 'all'){ return PRODUCTS; }
+    return PRODUCTS.filter(function(p){ return p.category === cat; });
+}
+function getProductById(id){
+    return PRODUCTS.find(function(p){ return p.id === id; });
+}
+function formatPrice(n){
+    return '₹' + Number(n).toLocaleString('en-IN');
+}
+
+/* ================================
+   CART (saved in this browser only)
+================================ */
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem('rr_cart') || '[]'); } catch(e){ cart = []; }
+
+function saveCart(){
+    try { localStorage.setItem('rr_cart', JSON.stringify(cart)); } catch(e){}
+    updateCartBadge();
+}
+
+let toastTimer = null;
+function showToast(msg){
+    let toast = document.getElementById('rr-toast');
+    if(!toast){
+        toast = document.createElement('div');
+        toast.id = 'rr-toast';
+        document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 1400);
+}
+
+function bumpBadge(el){
+    if(!el){ return; }
+    el.classList.remove('bump');
+    void el.offsetWidth;
+    el.classList.add('bump');
+}
+
+function addToCart(id, qty){
+    qty = qty || 1;
+    const existing = cart.find(function(c){ return c.id === id; });
+    if(existing){ existing.qty += qty; } else { cart.push({ id: id, qty: qty }); }
+    saveCart();
+
+    showToast('✓ Added to Cart');
+    bumpBadge(cartBadge);
+    bumpBadge(lbCartBadge);
+}
+
+function removeFromCart(id){
+    cart = cart.filter(function(c){ return c.id !== id; });
+    saveCart();
+    renderCart();
+}
+
+function setCartQty(id, qty){
+    const item = cart.find(function(c){ return c.id === id; });
+    if(!item){ return; }
+    if(qty <= 0){ removeFromCart(id); return; }
+    item.qty = qty;
+    saveCart();
+    renderCart();
+}
+
+function cartCount(){
+    return cart.reduce(function(sum, c){ return sum + c.qty; }, 0);
+}
+
+function cartTotal(items){
+    return (items || cart).reduce(function(sum, c){
+        const p = getProductById(c.id);
+        return sum + (p ? p.price * c.qty : 0);
+    }, 0);
+}
+
+const cartBadge = document.getElementById('cart-badge');
+const lbCartBadge = document.getElementById('lb-cart-badge');
+
+function updateCartBadge(){
+    const count = cartCount();
+    cartBadge.textContent = count;
+    cartBadge.classList.toggle('hidden', count === 0);
+    if(lbCartBadge){
+        lbCartBadge.textContent = count;
+        lbCartBadge.classList.toggle('hidden', count === 0);
+    }
+}
+
+/* ================================
+   FAVORITES / WISHLIST
+   (saved in this browser only)
+================================ */
+let favorites = [];
+try { favorites = JSON.parse(localStorage.getItem('rr_favorites') || '[]'); } catch(e){ favorites = []; }
+
+function isFavorite(id){
+    return favorites.indexOf(id) !== -1;
+}
+
+function saveFavorites(){
+    try { localStorage.setItem('rr_favorites', JSON.stringify(favorites)); } catch(e){}
+    updateFavBadge();
+}
+
+function toggleFavorite(id){
+    let nowFavorite;
+    if(isFavorite(id)){
+        favorites = favorites.filter(function(f){ return f !== id; });
+        nowFavorite = false;
+    } else {
+        favorites.push(id);
+        nowFavorite = true;
+    }
+    saveFavorites();
+
+    document.querySelectorAll('.pc-fav[data-id="' + id + '"]').forEach(function(btn){
+        btn.classList.toggle('active', isFavorite(id));
+        btn.classList.remove('pop');
+        void btn.offsetWidth;
+        btn.classList.add('pop');
+    });
+
+    showToast(nowFavorite ? '♥ Added to Favorites' : 'Removed from Favorites');
+    bumpBadge(favBadge);
+
+    if(favOverlay && favOverlay.classList.contains('open')){
+        renderFavorites();
+    }
+}
+
+const favBadge = document.getElementById('fav-badge');
+
+function updateFavBadge(){
+    const count = favorites.length;
+    favBadge.textContent = count;
+    favBadge.classList.toggle('hidden', count === 0);
+}
+
+const favOverlay = document.getElementById('fav-overlay');
+const favGrid = document.getElementById('fav-grid');
+const favEmpty = document.getElementById('fav-empty');
+const favSubEl = document.getElementById('fav-sub');
+
+function renderFavorites(){
+    favGrid.innerHTML = '';
+    const items = favorites.map(getProductById).filter(Boolean);
+
+    favEmpty.style.display = items.length ? 'none' : 'block';
+    favSubEl.textContent = items.length + (items.length === 1 ? ' item' : ' items');
+
+    items.forEach(function(p){
+        favGrid.appendChild(buildProductCard(p));
+    });
+}
+
+function openFavorites(){
+    renderFavorites();
+    favOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    ensureModalHistory();
+}
+function closeFavorites(){
+    favOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+document.getElementById('fav-btn').addEventListener('click', openFavorites);
+document.getElementById('fav-close').addEventListener('click', function(){
+    closeFavorites();
+    syncModalHistoryAfterUiClose();
+});
+favOverlay.addEventListener('click', function(e){
+    if(e.target === favOverlay){ closeFavorites(); syncModalHistoryAfterUiClose(); }
+});
+
+/* ================================
+   CART DRAWER
+================================ */
+const cartOverlay = document.getElementById('cart-overlay');
+const cartItemsEl = document.getElementById('cart-items');
+const cartEmptyEl = document.getElementById('cart-empty');
+const cartFooterEl = document.getElementById('cart-footer');
+const cartTotalEl = document.getElementById('cart-total');
+const cartSubEl = document.getElementById('cart-sub');
+
+function renderCart(){
+    cartItemsEl.innerHTML = '';
+
+    if(cart.length === 0){
+        cartEmptyEl.style.display = 'block';
+        cartFooterEl.style.display = 'none';
+        cartSubEl.textContent = '0 items';
+        return;
+    }
+
+    cartEmptyEl.style.display = 'none';
+    cartFooterEl.style.display = 'block';
+    const count = cartCount();
+    cartSubEl.textContent = count + (count > 1 ? ' items' : ' item');
+
+    cart.forEach(function(c){
+        const p = getProductById(c.id);
+        if(!p){ return; }
+
+        const row = document.createElement('div');
+        row.className = 'cart-item';
+
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'cart-item-img';
+        const img = document.createElement('img');
+        img.src = p.images[0];
+        img.alt = p.name;
+        markImageEmpty(img);
+        imgWrap.appendChild(img);
+
+        const info = document.createElement('div');
+        info.className = 'cart-item-info';
+        info.innerHTML =
+            '<div class="cart-item-name"></div>' +
+            '<div class="cart-item-price"></div>' +
+            '<div class="qty-stepper small">' +
+                '<button type="button" class="ci-minus" aria-label="Decrease quantity">−</button>' +
+                '<span></span>' +
+                '<button type="button" class="ci-plus" aria-label="Increase quantity">+</button>' +
+            '</div>';
+        info.querySelector('.cart-item-name').textContent = p.name;
+        info.querySelector('.cart-item-price').textContent = formatPrice(p.price);
+        info.querySelector('.qty-stepper span').textContent = c.qty;
+        info.querySelector('.ci-minus').addEventListener('click', function(){ setCartQty(c.id, c.qty - 1); });
+        info.querySelector('.ci-plus').addEventListener('click', function(){ setCartQty(c.id, c.qty + 1); });
+
+        const removeBtn = document.createElement('button');
+        removeBtn.className = 'cart-item-remove';
+        removeBtn.setAttribute('aria-label', 'Remove item');
+        removeBtn.textContent = '✕';
+        removeBtn.addEventListener('click', function(){ removeFromCart(c.id); });
+
+        row.appendChild(imgWrap);
+        row.appendChild(info);
+        row.appendChild(removeBtn);
+        cartItemsEl.appendChild(row);
+    });
+
+    cartTotalEl.textContent = formatPrice(cartTotal());
+}
+
+function openCart(){
+    document.getElementById('order-history-view').style.display = 'none';
+    document.getElementById('cart-view').style.display = 'block';
+    renderCart();
+    cartOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    ensureModalHistory();
+}
+function closeCart(){
+    cartOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+document.getElementById('cart-btn').addEventListener('click', openCart);
+document.getElementById('cart-close').addEventListener('click', function(){
+    closeCart();
+    syncModalHistoryAfterUiClose();
+});
+cartOverlay.addEventListener('click', function(e){
+    if(e.target === cartOverlay){ closeCart(); syncModalHistoryAfterUiClose(); }
+});
+
+/* ================================
+   ORDER HISTORY
+   (saved locally in this browser
+   each time an order is sent)
+================================ */
+function renderOrderHistory(){
+    const listEl = document.getElementById('order-history-list');
+    const emptyEl = document.getElementById('order-history-empty');
+    let orders = [];
+    try { orders = JSON.parse(localStorage.getItem('rr_orders') || '[]'); } catch(e){ orders = []; }
+
+    listEl.innerHTML = '';
+
+    if(orders.length === 0){
+        emptyEl.style.display = 'block';
+        return;
+    }
+    emptyEl.style.display = 'none';
+
+    orders.forEach(function(order){
+        const card = document.createElement('div');
+        card.className = 'order-card';
+
+        const dateEl = document.createElement('div');
+        dateEl.className = 'order-card-date';
+        const d = new Date(order.date);
+        const dateOk = !isNaN(d.getTime());
+        dateEl.textContent = dateOk
+            ? d.toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' }) + ' · ' + d.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit' })
+            : '';
+
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'order-card-items';
+        (order.items || []).forEach(function(c){
+            const p = getProductById(c.id);
+            const line = document.createElement('div');
+            line.textContent = (p ? p.name : 'Item') + ' × ' + c.qty;
+            itemsEl.appendChild(line);
+        });
+
+        const totalEl = document.createElement('div');
+        totalEl.className = 'order-card-total';
+        totalEl.textContent = 'Total: ' + formatPrice(order.total || 0);
+
+        const statusEl = document.createElement('div');
+        statusEl.className = 'order-card-status';
+        statusEl.textContent = 'Sent via WhatsApp — status updates shared there';
+
+        card.appendChild(dateEl);
+        card.appendChild(itemsEl);
+        card.appendChild(totalEl);
+        card.appendChild(statusEl);
+        listEl.appendChild(card);
+    });
+}
+
+document.getElementById('view-orders-link').addEventListener('click', function(){
+    renderOrderHistory();
+    document.getElementById('cart-view').style.display = 'none';
+    document.getElementById('order-history-view').style.display = 'block';
+});
+document.getElementById('back-to-cart-link').addEventListener('click', function(){
+    document.getElementById('order-history-view').style.display = 'none';
+    document.getElementById('cart-view').style.display = 'block';
+});
+
+/* ================================
+   CHECKOUT (sends order via WhatsApp)
+================================ */
+const checkoutOverlay = document.getElementById('checkout-overlay');
+const checkoutSummaryEl = document.getElementById('checkout-summary');
+const checkoutForm = document.getElementById('checkout-form');
+let checkoutItems = [];
+let checkoutFromCart = false;
+
+function renderCheckoutSummary(){
+    checkoutSummaryEl.innerHTML = '';
+
+    checkoutItems.forEach(function(c){
+        const p = getProductById(c.id);
+        if(!p){ return; }
+        const row = document.createElement('div');
+        row.className = 'cs-row';
+        row.innerHTML = '<span></span><span></span>';
+        row.children[0].textContent = p.name + ' × ' + c.qty;
+        row.children[1].textContent = formatPrice(p.price * c.qty);
+        checkoutSummaryEl.appendChild(row);
+    });
+
+    const totalRow = document.createElement('div');
+    totalRow.className = 'cs-total';
+    totalRow.innerHTML = '<span>Total</span><span></span>';
+    totalRow.children[1].textContent = formatPrice(cartTotal(checkoutItems));
+    checkoutSummaryEl.appendChild(totalRow);
+}
+
+function openCheckout(items, fromCart){
+    if(!items || items.length === 0){ return; }
+    checkoutItems = items;
+    checkoutFromCart = !!fromCart;
+    renderCheckoutSummary();
+
+    /* Switch view directly — a modal session is already active
+       (or is about to become one), so we don't release/re-push
+       history here, just swap which overlay is visible. */
+    cartOverlay.classList.remove('open');
+    lightbox.classList.remove('open');
+    lightboxPanel.classList.remove('single-mode');
+    lightboxPanel.classList.remove('showing-product');
+
+    checkoutOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    ensureModalHistory();
+}
+function closeCheckout(){
+    checkoutOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+document.getElementById('cart-checkout-btn').addEventListener('click', function(){
+    openCheckout(cart.slice(), true);
+});
+document.getElementById('checkout-close').addEventListener('click', function(){
+    closeCheckout();
+    syncModalHistoryAfterUiClose();
+});
+checkoutOverlay.addEventListener('click', function(e){
+    if(e.target === checkoutOverlay){ closeCheckout(); syncModalHistoryAfterUiClose(); }
+});
+
+checkoutForm.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const name = document.getElementById('checkout-name').value.trim();
+    const phone = document.getElementById('checkout-phone').value.trim();
+    const address = document.getElementById('checkout-address').value.trim();
+    if(!name || !phone || !address){ return; }
+
+    let message = '🛍️ *New Order — Radhe Radhe*\n\n';
+    let total = 0;
+
+    checkoutItems.forEach(function(c, i){
+        const p = getProductById(c.id);
+        if(!p){ return; }
+        const lineTotal = p.price * c.qty;
+        total += lineTotal;
+        message += (i + 1) + '. ' + p.name + ' x' + c.qty + ' — ' + formatPrice(lineTotal) + '\n';
+    });
+
+    message += '\n*Total: ' + formatPrice(total) + '*\n\n';
+    message += '👤 Name: ' + name + '\n';
+    message += '📞 Phone: ' + phone + '\n';
+    message += '🏠 Address: ' + address + '\n\n';
+    message += '💰 Payment: Cash on Delivery\n\n';
+    message += '📦 We will share your order status updates here on WhatsApp.';
+
+    const waUrl = 'https://wa.me/919153401395?text=' + encodeURIComponent(message);
+
+    try {
+        const orders = JSON.parse(localStorage.getItem('rr_orders') || '[]');
+        orders.unshift({ date: new Date().toISOString(), items: checkoutItems, total: total, name: name });
+        localStorage.setItem('rr_orders', JSON.stringify(orders.slice(0, 20)));
+    } catch(err){}
+
+    if(checkoutFromCart){
+        cart = [];
+        saveCart();
+    }
+
+    window.open(waUrl, '_blank');
+    closeCheckout();
+    checkoutForm.reset();
+});
+
+updateCartBadge();
+updateFavBadge();
+
+/* ================================
+   COLLECTION LIGHTBOX
+   (product grid for shop categories,
+   plain photo grid for "Our Store")
+================================ */
+
+const lightbox = document.getElementById('lightbox');
+const lightboxPanel = document.getElementById('lightbox-panel');
+const lightboxTitle = document.getElementById('lightbox-title');
+const lightboxSub = document.getElementById('lightbox-sub');
+const lightboxGrid = document.getElementById('lightbox-grid');
+const filterDropdown = document.getElementById('filter-dropdown');
+const lbSingleImg = document.getElementById('lb-single-img');
+const lbCounter = document.getElementById('lb-counter');
+const lbPrev = document.getElementById('lb-prev');
+const lbNext = document.getElementById('lb-next');
+
+let currentPhotos = [];
+let currentIndex = 0;
+let currentProduct = null;
+let currentQty = 1;
+let currentCategoryKey = null;
+let activeSubcategory = null;
+
+/* Builds one product card — reused in the category grid,
+   the "You may also like" suggestions and the Favorites list. */
+function buildProductCard(product){
+    const card = document.createElement('div');
+    card.className = 'product-card';
+
+    const imgWrap = document.createElement('div');
+    imgWrap.className = 'product-card-img';
+    const img = document.createElement('img');
+    img.src = product.images[0];
+    img.alt = product.name;
+    img.loading = 'lazy';
+    markImageEmpty(img);
+    imgWrap.appendChild(img);
+
+    if(product.bestSeller || product.newArrival){
+        const tags = document.createElement('div');
+        tags.className = 'product-card-tags';
+        if(product.bestSeller){
+            const t = document.createElement('span');
+            t.className = 'product-card-tag tag-bestseller';
+            t.textContent = 'Best Seller';
+            tags.appendChild(t);
+        }
+        if(product.newArrival){
+            const t = document.createElement('span');
+            t.className = 'product-card-tag tag-newarrival';
+            t.textContent = 'New Arrival';
+            tags.appendChild(t);
+        }
+        imgWrap.appendChild(tags);
+    }
+
+    const favBtn = document.createElement('button');
+    favBtn.type = 'button';
+    favBtn.className = 'pc-fav' + (isFavorite(product.id) ? ' active' : '');
+    favBtn.setAttribute('data-id', product.id);
+    favBtn.setAttribute('aria-label', 'Toggle favorite');
+    favBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.87-10.4-9.1C-.3 8.6.6 4.9 3.8 3.4c2.6-1.2 5.4-.4 6.9 1.6l1.3 1.7 1.3-1.7c1.5-2 4.3-2.8 6.9-1.6 3.2 1.5 4.1 5.2 2.2 8.5C19.5 16.13 12 21 12 21z"/></svg>';
+    favBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        toggleFavorite(product.id);
+        favBtn.classList.toggle('active', isFavorite(product.id));
+    });
+    imgWrap.appendChild(favBtn);
+
+    const body = document.createElement('div');
+    body.className = 'product-card-body';
+    body.innerHTML =
+        '<div class="product-card-name"></div>' +
+        '<div class="product-card-price"></div>' +
+        '<div class="product-card-actions">' +
+            '<button type="button" class="pc-btn pc-add">Add to Cart</button>' +
+            '<button type="button" class="pc-btn pc-buy">Buy Now</button>' +
+        '</div>';
+    body.querySelector('.product-card-name').textContent = product.name;
+    body.querySelector('.product-card-price').textContent = formatPrice(product.price);
+    body.querySelector('.pc-add').addEventListener('click', function(e){
+        e.stopPropagation();
+        addToCart(product.id, 1);
+        const btn = e.currentTarget;
+        btn.classList.remove('added');
+        void btn.offsetWidth;
+        btn.classList.add('added');
+    });
+    body.querySelector('.pc-buy').addEventListener('click', function(e){
+        e.stopPropagation();
+        openCheckout([{ id: product.id, qty: 1 }], false);
+    });
+
+    card.appendChild(imgWrap);
+    card.appendChild(body);
+    card.addEventListener('click', function(){ openProductDetail(product); });
+    return card;
+}
+
+const lbCatSwitch = document.getElementById('lb-cat-switch');
+
+/* Bottom "switch category" strip — shown inside every open
+   collection so the user can jump to any other category in
+   one tap, without going back to the home page. */
+function renderCategorySwitch(activeKey){
+    lbCatSwitch.innerHTML = '';
+    Object.keys(CATEGORY_INFO).forEach(function(key){
+        const info = CATEGORY_INFO[key];
+        const icon = CATEGORY_ICONS[key] || {};
+
+        const item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'lb-cat-switch-item' + (key === activeKey ? ' active' : '');
+
+        const iconBox = document.createElement('span');
+        iconBox.className = 'lb-cat-switch-icon';
+        if(icon.png){
+            iconBox.innerHTML =
+                '<img src="' + icon.png + '" alt="" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'inline\'">' +
+                '<span class="emoji-fallback" style="display:none;">' + (icon.emoji || '🏷️') + '</span>';
+        } else {
+            iconBox.innerHTML = '<span class="emoji-fallback">' + (icon.emoji || '🏷️') + '</span>';
+        }
+
+        const name = document.createElement('span');
+        name.className = 'lb-cat-switch-name';
+        name.textContent = info.shortLabel || info.label;
+
+        item.appendChild(iconBox);
+        item.appendChild(name);
+        item.addEventListener('click', function(){ openLightbox(key); });
+
+        lbCatSwitch.appendChild(item);
+    });
+}
+
+/* Subcategory list for a category — used to build the filter dropdown. */
+function getSubcategories(categoryKey){
+    const items = getProductsByCategory(categoryKey);
+    const list = [];
+    items.forEach(function(p){
+        const sub = p.subcategory || 'Other';
+        if(list.indexOf(sub) === -1){ list.push(sub); }
+    });
+    return list;
+}
+
+/* Renders the current category's product grid, applying the
+   active subcategory filter (if any). */
+function renderProductGrid(categoryKey){
+    let items = getProductsByCategory(categoryKey);
+    if(activeSubcategory){
+        items = items.filter(function(p){ return (p.subcategory || 'Other') === activeSubcategory; });
+    }
+
+    lightboxGrid.innerHTML = '';
+    items.forEach(function(product){
+        lightboxGrid.appendChild(buildProductCard(product));
+    });
+
+    if(items.length === 0){
+        const empty = document.createElement('p');
+        empty.style.cssText = 'grid-column:1/-1;text-align:center;color:#85878d;font-size:13px;padding:30px 0;';
+        empty.textContent = 'No products found for this filter.';
+        lightboxGrid.appendChild(empty);
+    }
+}
+
+/* Renders the "grid of badges" filter dropdown — one badge per
+   subcategory, no card background, icon + name only. */
+function renderFilterDropdown(categoryKey){
+    filterDropdown.innerHTML = '';
+    const subs = ['All'].concat(getSubcategories(categoryKey));
+
+    subs.forEach(function(sub){
+        const isActive = (sub === 'All' && !activeSubcategory) || (sub === activeSubcategory);
+
+        const badge = document.createElement('button');
+        badge.type = 'button';
+        badge.className = 'filter-badge' + (isActive ? ' active' : '');
+
+        const icon = document.createElement('span');
+        icon.className = 'filter-badge-icon';
+        const pngPath = sub !== 'All' ? SUBCATEGORY_ICONS[sub] : SUBCATEGORY_ICONS.all;
+        if(pngPath){
+            icon.innerHTML = '<img src="' + pngPath + '" alt="" onerror="this.remove()">';
+        }
+
+        const name = document.createElement('span');
+        name.className = 'filter-badge-name';
+        name.textContent = sub;
+
+        badge.appendChild(icon);
+        badge.appendChild(name);
+
+        badge.addEventListener('click', function(){
+            activeSubcategory = (sub === 'All') ? null : sub;
+            filterDropdown.classList.remove('open');
+            renderFilterDropdown(categoryKey);
+            renderProductGrid(categoryKey);
+        });
+
+        filterDropdown.appendChild(badge);
+    });
+}
+
+function openLightbox(categoryKey){
+    const info = (categoryKey === 'all')
+        ? { label: 'All Collections', tagline: 'Every style, every occasion — one place', shop: true }
+        : CATEGORY_INFO[categoryKey];
+    if(!info){ return; }
+
+    lightboxTitle.textContent = info.label;
+    lightboxSub.textContent = info.tagline;
+    lightboxGrid.innerHTML = '';
+    lightboxGrid.classList.toggle('shop-grid', !!info.shop);
+    lightboxPanel.classList.remove('single-mode');
+    lightboxPanel.classList.remove('showing-product');
+    lightboxPanel.classList.toggle('is-shop', !!info.shop);
+    filterDropdown.classList.remove('open');
+
+    currentPhotos = [];
+    currentCategoryKey = categoryKey;
+    activeSubcategory = null;
+    renderCategorySwitch(categoryKey);
+
+    if(info.shop){
+        renderFilterDropdown(categoryKey);
+        renderProductGrid(categoryKey);
+        if(getProductsByCategory(categoryKey).length === 0){
+            lightboxGrid.innerHTML = '';
+            const empty = document.createElement('p');
+            empty.style.cssText = 'grid-column:1/-1;text-align:center;color:#85878d;font-size:13px;padding:30px 0;';
+            empty.textContent = 'Products coming soon in this category.';
+            lightboxGrid.appendChild(empty);
+        }
+    } else {
+        for(let i = 1; i <= info.count; i++){
+            const src = info.prefix + '-' + i + '.jpg';
+            currentPhotos.push({ src: src, alt: info.label + ' photo ' + i });
+
+            const tile = document.createElement('div');
+            tile.className = 'lb-tile';
+
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = info.label + ' photo ' + i;
+            img.loading = 'lazy';
+            markImageEmpty(img);
+
+            tile.appendChild(img);
+            tile.addEventListener('click', function(){ openSingleView(i - 1); });
+            lightboxGrid.appendChild(tile);
+        }
+    }
+
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    ensureModalHistory();
+}
+
+function openSingleView(index){
+    currentProduct = null;
+    currentIndex = index;
+    updateSingleView();
+    lightboxPanel.classList.add('single-mode');
+    lightboxPanel.classList.remove('showing-product');
+}
+
+function openProductDetail(product){
+    currentProduct = product;
+    currentQty = 1;
+    currentPhotos = product.images.map(function(src, i){
+        return { src: src, alt: product.name + ' photo ' + (i + 1) };
+    });
+    currentIndex = 0;
+    updateSingleView();
+
+    document.getElementById('lb-product-name').textContent = product.name;
+    document.getElementById('lb-product-price').textContent = formatPrice(product.price);
+    document.getElementById('lb-product-desc').textContent = product.description || '';
+    document.getElementById('lb-qty-value').textContent = currentQty;
+
+    lightboxPanel.classList.add('single-mode');
+    lightboxPanel.classList.add('showing-product');
+    filterDropdown.classList.remove('open');
+
+    renderSuggestions(product);
+    lightboxPanel.scrollTop = 0;
+}
+
+/* "You may also like" — other products from the same category,
+   shown below the product detail so the user can keep browsing
+   just like on a regular e-commerce site. */
+function renderSuggestions(product){
+    const section = document.getElementById('lb-suggestions');
+    const grid = document.getElementById('lb-suggestions-grid');
+    grid.innerHTML = '';
+
+    const items = getProductsByCategory(product.category).filter(function(p){
+        return p.id !== product.id;
+    });
+
+    if(items.length === 0){
+        section.style.display = 'none';
+        return;
+    }
+
+    section.style.display = 'block';
+    items.forEach(function(p){
+        grid.appendChild(buildProductCard(p));
+    });
+}
+
+function updateSingleView(){
+    const photo = currentPhotos[currentIndex];
+    lbSingleImg.classList.remove('img-empty');
+    lbSingleImg.src = photo.src;
+    lbSingleImg.alt = photo.alt;
+    markImageEmpty(lbSingleImg);
+    lbCounter.textContent = (currentIndex + 1) + ' / ' + currentPhotos.length;
+}
+
+function stepSingleView(delta){
+    currentIndex = (currentIndex + delta + currentPhotos.length) % currentPhotos.length;
+    updateSingleView();
+}
+
+/* Steps from the item/product detail view back to the grid,
+   without closing the whole popup. */
+function stepBackToGrid(){
+    lightboxPanel.classList.remove('single-mode');
+    lightboxPanel.classList.remove('showing-product');
+}
+
+function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightboxPanel.classList.remove('single-mode');
+    lightboxPanel.classList.remove('showing-product');
+    filterDropdown.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+document.getElementById('lb-qty-minus').addEventListener('click', function(){
+    if(currentQty > 1){
+        currentQty--;
+        document.getElementById('lb-qty-value').textContent = currentQty;
+    }
+});
+document.getElementById('lb-qty-plus').addEventListener('click', function(){
+    currentQty++;
+    document.getElementById('lb-qty-value').textContent = currentQty;
+});
+document.getElementById('lb-add-cart').addEventListener('click', function(){
+    if(!currentProduct){ return; }
+    addToCart(currentProduct.id, currentQty);
+});
+document.getElementById('lb-buy-now').addEventListener('click', function(){
+    if(!currentProduct){ return; }
+    openCheckout([{ id: currentProduct.id, qty: currentQty }], false);
+});
+
+galleryItems.forEach(function(item){
+    item.addEventListener('click', function(){
+        openLightbox(item.getAttribute('data-category'));
+    });
+    item.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){
+            e.preventDefault();
+            openLightbox(item.getAttribute('data-category'));
+        }
+    });
+});
+
+document.getElementById('view-all-collections-btn').addEventListener('click', function(){
+    openLightbox('all');
+});
+
+lbPrev.addEventListener('click', function(){ stepSingleView(-1); });
+lbNext.addEventListener('click', function(){ stepSingleView(1); });
+
+/* Swipe gestures — swipe left/right on the photo to move
+   between images, for customers browsing on their phone. */
+const lbSingleFrame = document.querySelector('.lb-single-frame');
+let touchStartX = 0;
+let touchStartY = 0;
+
+lbSingleFrame.addEventListener('touchstart', function(e){
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+lbSingleFrame.addEventListener('touchend', function(e){
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchEndY = e.changedTouches[0].clientY;
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+
+    if(Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)){
+        if(deltaX < 0){ stepSingleView(1); } else { stepSingleView(-1); }
+    }
+}, { passive: true });
+
+/* Home icon — jumps straight back to the home page from any
+   collection screen (grid or single item). */
+document.getElementById('lightbox-home-btn').addEventListener('click', function(){
+    closeLightbox();
+    syncModalHistoryAfterUiClose();
+    window.location.hash = '#home';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* Filter icon — toggles the subcategory badge dropdown open/shut. */
+document.getElementById('lightbox-filter-btn').addEventListener('click', function(e){
+    e.stopPropagation();
+    filterDropdown.classList.toggle('open');
+});
+
+/* Cart icon in the collection header — opens the same cart drawer. */
+document.getElementById('lightbox-cart-btn').addEventListener('click', function(){
+    openCart();
+});
+
+/* Tapping anywhere outside the open filter dropdown closes it. */
+document.addEventListener('click', function(e){
+    if(!filterDropdown.classList.contains('open')){ return; }
+    if(filterDropdown.contains(e.target) || e.target.closest('#lightbox-filter-btn')){ return; }
+    filterDropdown.classList.remove('open');
+});
+
+/* Close (✕) is context-aware: from the item/product detail view
+   it steps back to the grid; from the grid it closes the popup. */
+document.getElementById('lightbox-close').addEventListener('click', function(){
+    if(lightboxPanel.classList.contains('single-mode')){
+        stepBackToGrid();
+    } else {
+        closeLightbox();
+    }
+    syncModalHistoryAfterUiClose();
+});
+lightbox.addEventListener('click', function(e){
+    if(e.target === lightbox){
+        closeLightbox();
+        syncModalHistoryAfterUiClose();
+    }
+});
+document.addEventListener('keydown', function(e){
+    if(lightbox.classList.contains('open')){
+        if(e.key === 'Escape'){
+            if(lightboxPanel.classList.contains('single-mode')){
+                stepBackToGrid();
+            } else {
+                closeLightbox();
+            }
+            syncModalHistoryAfterUiClose();
+        }
+        if(lightboxPanel.classList.contains('single-mode')){
+            if(e.key === 'ArrowLeft'){ stepSingleView(-1); }
+            if(e.key === 'ArrowRight'){ stepSingleView(1); }
+        }
+    }
+    if(e.key === 'Escape' && cartOverlay.classList.contains('open')){
+        closeCart();
+        syncModalHistoryAfterUiClose();
+    }
+    if(e.key === 'Escape' && checkoutOverlay.classList.contains('open')){
+        closeCheckout();
+        syncModalHistoryAfterUiClose();
+    }
+    if(e.key === 'Escape' && favOverlay.classList.contains('open')){
+        closeFavorites();
+        syncModalHistoryAfterUiClose();
+    }
+});
+
+/* ================================
+   MOBILE BACK BUTTON SUPPORT
+   Pressing the phone's back button
+   (or gesture) steps back through an
+   open popup instead of leaving the
+   page — same behaviour as the ✕.
+================================ */
+let modalHistoryActive = false;
+
+function ensureModalHistory(){
+    if(!modalHistoryActive){
+        modalHistoryActive = true;
+        history.pushState({ rrModal:true }, '');
+    }
+}
+
+function anyModalOpen(){
+    return checkoutOverlay.classList.contains('open') ||
+           cartOverlay.classList.contains('open') ||
+           favOverlay.classList.contains('open') ||
+           lightbox.classList.contains('open');
+}
+
+function syncModalHistoryAfterUiClose(){
+    if(!anyModalOpen() && modalHistoryActive){
+        modalHistoryActive = false;
+        history.back();
+    }
+}
+
+window.addEventListener('popstate', function(){
+    if(checkoutOverlay.classList.contains('open')){
+        closeCheckout();
+    } else if(cartOverlay.classList.contains('open')){
+        closeCart();
+    } else if(favOverlay.classList.contains('open')){
+        closeFavorites();
+    } else if(lightbox.classList.contains('open')){
+        if(lightboxPanel.classList.contains('single-mode')){
+            stepBackToGrid();
+        } else {
+            closeLightbox();
+        }
+    }
+
+    if(anyModalOpen()){
+        modalHistoryActive = true;
+        history.pushState({ rrModal:true }, '');
+    } else {
+        modalHistoryActive = false;
+    }
+});
+
+const navLinks = document.querySelectorAll('.nav-links a');
+
+navLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        navLinks.forEach(item => {
+            item.classList.remove('active');
+        });
+
+        link.classList.add('active');
+
+    });
+
+});
+
+
+const sections = document.querySelectorAll(
+    'main section[id]'
+);
+
+window.addEventListener('scroll', () => {
+
+    let current = '';
+
+    sections.forEach(section => {
+
+        const sectionTop =
+            section.offsetTop - 140;
+
+        if(
+            window.scrollY >= sectionTop
+        ){
+            current = section.getAttribute('id');
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove('active');
+
+        if(
+            link.getAttribute('href') === '#' + current
+        ){
+            link.classList.add('active');
+        }
+
+    });
+
+});
+
+/* Gentle 3D tilt on the hero photo — desktop pointers only */
+const heroFrame = document.querySelector('.hero-frame');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const supportsHoverTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+if(heroFrame && supportsHoverTilt && !prefersReducedMotion){
+    heroFrame.addEventListener('mousemove', function(e){
+        const rect = heroFrame.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        heroFrame.style.transform = 'rotateY(' + (x * 8).toFixed(2) + 'deg) rotateX(' + (-y * 8).toFixed(2) + 'deg) scale(1.02)';
+    });
+    heroFrame.addEventListener('mouseleave', function(){
+        heroFrame.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';
+    });
+}
+
+</script>
+
+</body>
+</html>
