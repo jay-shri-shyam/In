@@ -40,4 +40,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Rebuild SEO pages [skip ci]"
-          file_pattern: "shop/** product/** wishlist/** orders/** sitemap.xml robots.txt merchant-feed.xml index.html 404.html .nojekyll"
+          file_pattern: "."
