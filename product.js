@@ -24,6 +24,14 @@
    NOTE: names, prices, sizes and colours below are SAMPLE data.
    Change them to match your real stock and photos before going live.
    ===================================================================== */
+/* ---------------------------------------------------------------------
+   IMPORTANT: this list is SAMPLE data (invented names, prices and colours).
+   While the next line says true, no Google pages are created for products,
+   so wrong prices never reach Google.
+   After you put your REAL products in, change it to false (or delete the line).
+   --------------------------------------------------------------------- */
+window.SAMPLE_DATA = true;
+
 window.PRODUCTS = [
 
   /* ===== SAREES (54 items) ===== */

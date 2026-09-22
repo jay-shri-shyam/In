@@ -1,7 +1,7 @@
 /* Radhe Radhe service worker: makes the site installable and fast.
    Bump CACHE when you change many files so old copies are cleared. */
-const CACHE = 'radhe-radhe-v1';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
+const CACHE = 'radhe-radhe-v2';
+const SHELL = ['/', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
 
 self.addEventListener('install', function(e){
   e.waitUntil(
@@ -42,7 +42,7 @@ self.addEventListener('fetch', function(e){
   if(req.method !== 'GET'){ return; }
   var url = new URL(req.url);
   if(url.origin !== self.location.origin){ return; }          // fonts, maps, Google login: leave to the browser
-  if(req.mode === 'navigate'){ e.respondWith(networkFirst(req, './index.html')); return; }
+  if(req.mode === 'navigate'){ e.respondWith(networkFirst(req, '/index.html')); return; }
   if(/product\.js$/.test(url.pathname)){ e.respondWith(networkFirst(req)); return; }   // catalog updates show up right away
   e.respondWith(staleWhileRevalidate(req));                     // images, icons, css: instant, refreshed in background
 });

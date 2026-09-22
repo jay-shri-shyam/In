@@ -2,9 +2,9 @@
   "name": "Radhe Radhe Fashion & Lifestyle",
   "short_name": "Radhe Radhe",
   "description": "Sarees, lehengas, kurtis, men's, women's and kid's wear from Radhe Radhe, Phulwari Sharif, Patna. Order with cash on delivery.",
-  "id": "./",
-  "start_url": "./",
-  "scope": "./",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
@@ -37,7 +37,7 @@
   "shortcuts": [
     {
       "name": "Shop all",
-      "url": "./#/shop/all",
+      "url": "/shop/",
       "icons": [
         {
           "src": "icon-192.png",
@@ -47,7 +47,7 @@
     },
     {
       "name": "My orders",
-      "url": "./#/orders",
+      "url": "/orders/",
       "icons": [
         {
           "src": "icon-192.png",
@@ -55,5 +55,6 @@
         }
       ]
     }
-  ]
+  ],
+  "prefer_related_applications": false
 }
