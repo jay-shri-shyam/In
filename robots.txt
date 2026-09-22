@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /wishlist/
+Disallow: /orders/
+Disallow: /*?q=
+
+Sitemap: https://radheradhefashion.in/sitemap.xml
