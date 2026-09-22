@@ -1,0 +1,43 @@
+name: Build SEO pages
+
+# Runs by itself whenever you change product.js (or the site code), and
+# rebuilds every product/category page, sitemap.xml, robots.txt and the
+# Google Merchant feed — then commits them back to the site.
+# You never need to run anything yourself.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "product.js"
+      - "app.js"
+      - "app.css"
+      - "index.html"
+      - "build-seo.js"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-seo
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build pages
+        run: node build-seo.js .
+
+      - name: Save the generated pages
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Rebuild SEO pages [skip ci]"
+          file_pattern: "shop/** product/** wishlist/** orders/** sitemap.xml robots.txt merchant-feed.xml index.html 404.html .nojekyll"
